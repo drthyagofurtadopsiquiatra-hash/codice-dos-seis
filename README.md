@@ -11,3 +11,8 @@ Site estático para GitHub Pages. A publicação usa a raiz da branch `main`. Ca
 5. Integre o commit em `main` e confira a execução do Pages na aba Actions. Abra a página publicada para verificar a atualização.
 
 O guia de campo foi adaptado de `COMO-OBSERVAR-ECOLOGIA.md`. O envio ao repositório inclui apenas arquivos destinados à publicação. Mantenha arquivos da campanha, fontes privadas e rascunhos fora deste repositório.
+
+## Atualizar a preparação da clériga
+
+Em `mercile.html`, mova a carta entre as seções `preparadas` e `disponiveis` após conferir a preparação registrada. Atualize a indicação da carta e os totais dos links no topo. Os truques conhecidos ficam na seção `truques`. Cada carta aponta para um WebP próprio, com o enquadramento completo.
+
