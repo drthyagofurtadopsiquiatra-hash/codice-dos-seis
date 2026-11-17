@@ -3,221 +3,372 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Códice de campo dos Seis e guia de observação.">
+  <title>Códice dos Seis · Phandelver Integrada</title>
   <link rel="icon" href="data:,">
-  <title>Códice dos Seis</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      --ink: #e8e4d8;
-      --muted: #c8c9b9;
-      --gold: #ecd18d;
-      --forest: #151f1c;
-      --paper: #212f29;
-      --rule: #536057;
-      background: var(--forest);
-      color: var(--ink);
-      font: 112.5%/1.65 system-ui, sans-serif;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; }
-    header, main, footer { max-width: 66rem; margin-inline: auto; padding-inline: clamp(1.25rem, 6vw, 4rem); }
-    header { padding-block: clamp(2.5rem, 10vw, 6rem) 2rem; }
-    h1, h2 { font-family: Georgia, serif; font-weight: 400; line-height: 1.08; }
-    h1 { max-width: 11ch; font-size: clamp(3rem, 9vw, 6.4rem); margin: 0 0 1.15rem; }
-    h2 { font-size: clamp(1.75rem, 4vw, 2.6rem); margin: 0 0 1rem; }
-    p { max-width: 62ch; margin: 0 0 1rem; }
-    nav { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
-    nav a { display: inline-flex; align-items: center; min-height: 44px; }
-    a { color: var(--gold); text-underline-offset: .22em; }
-    a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
-    main { display: grid; gap: 1.5rem; }
-    section { background: var(--paper); border: 1px solid var(--rule); padding: clamp(1rem, 4vw, 2rem); }
-    #cartas { border-block-start: 4px double var(--gold); }
-    #cartas, #guia { grid-column: 1 / -1; }
-    .spell-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 1.25rem; }
-    .spell { border: 1px solid var(--rule); background: var(--forest); }
-    .spell a { display: block; }
-    .spell img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: contain; }
-    .spell-copy { padding: 1rem; }
-    .spell h3 { font: 400 1.45rem Georgia, serif; margin: 0 0 .55rem; }
-    .spell-status { color: var(--gold); font-size: .85rem; }
-    section p:last-child { margin-bottom: 0; }
-    footer { color: var(--muted); padding-block: 2rem; font-size: .9rem; }
-    @media (min-width: 52rem) {
-      main { grid-template-columns: 1fr 1.4fr; align-items: start; }
-    }
-    [hidden] { display: none !important; }
-    .card-tools { grid-column: 1 / -1; background: var(--paper); border: 1px solid var(--rule); padding: 1rem; }
-    .tool-row { display: flex; flex-wrap: wrap; align-items: end; gap: .65rem; }
-    .card-tools label, .spell-copy label { display: block; font-size: .86rem; }
-    .card-tools input, .card-tools select, .card-tools button, .spell-copy textarea {
-      color: var(--ink); background: var(--forest); border: 1px solid var(--rule);
-      border-radius: .2rem; font: inherit; padding: .45rem .6rem; max-width: 100%;
-    }
-    .card-tools input, .card-tools select, .card-tools button { min-height: 44px; }
-    .card-tools input, .card-tools select { display: block; }
-    .card-tools output, .card-tools [role="status"] { color: var(--muted); font-size: .9rem; }
-    .card-tools details { margin-top: .55rem; }
-    .spell summary { cursor: pointer; padding: .7rem 1rem; color: var(--gold); }
-    .spell summary h3 { display: inline; }
-    .spell-copy textarea { display: block; width: 100%; resize: vertical; }
-    summary:focus-visible, input:focus-visible, button:focus-visible, textarea:focus-visible, select:focus-visible {
-      outline: 2px solid var(--gold); outline-offset: 2px;
-    }
-  </style>
-  <script src="./cartas.js" defer></script>
+  <link rel="stylesheet" href="./modelo.css">
+  <script src="./modelo.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Códice dos Seis</h1>
-    <nav aria-label="Seções do códice">
-      <a href="#cartas">Cartas</a>
-      <a href="./mercile.html">Magias da Mercile</a>
-      <a href="./thyago.html">Magias do Thyago</a>
-      <a href="./laios.html">Magias do Laios</a>
-      <a href="./colecoes.html">Coleções de campo</a>
-      <a href="#guia">Guia de campo</a>
+  <div class="shell">
+    <header class="head"><div><strong>✧ Códice dos Seis</strong><small>Phandelver Integrada</small></div></header>
+    <nav class="nav" aria-label="Abas do Códice">
+      <a href="#painel">⌂ Painel</a>
+      <a href="#thyago">✦ Thyago</a>
+      <a href="#botanica">❧ Botânica</a>
+      <a href="#culinaria">♨ Culinária</a>
+      <a href="#bestiario">♜ Bestiário</a>
+      <a href="#thalyta">♫ Thalyta</a>
+      <a href="#mercile">✚ Mercile</a>
+      <a href="#alquimia">⚗ Alquimia</a>
+      <a href="#laios">◆ Laios</a>
     </nav>
-  </header>
-  <main>
-    <section id="cartas" aria-labelledby="titulo-cartas">
-      <h2 id="titulo-cartas">Magias da Thalyta</h2>
-    <div class="card-tools" data-collection="thalyta" hidden>
-      <div class="tool-row">
-        <label>Buscar magia <input type="search" placeholder="Nome da magia"></label>
-        <label>Grupo <select><option value="">Todas as cartas</option></select></label>
-        <button type="button" data-expand="true">Expandir cartas</button>
-        <button type="button" data-expand="false">Recolher cartas</button>
-        <output aria-live="polite"></output>
-      </div>
-      <details>
-        <summary>Backup das anotações</summary>
-        <p>As anotações ficam neste navegador. Exporte o arquivo para usá-las em outro aparelho.</p>
-        <div class="tool-row">
-          <button type="button" data-export>Exportar anotações</button>
-          <label>Importar anotações <input type="file" accept=".json,application/json"></label>
+    <main class="content">
+      <section class="screen" id="painel" aria-labelledby="titulo-painel">
+        <div class="hero">
+          <div><div class="eyebrow">Phandelver · Coleções de campo</div><h1 id="titulo-painel">Códice dos Seis</h1><p>Magias dos personagens e registros das descobertas, receitas e ferramentas do grupo.</p></div>
+          <div class="hero-gallery" aria-label="Ilustrações das coleções de magia">
+            <img src="./thyago-sono.webp" alt="Thyago demonstra Sono" width="760" height="1140">
+            <img src="./mercile-bencao.webp" alt="Mercile demonstra Bênção" width="760" height="1140">
+            <img src="./laios-armadura-de-agathys.webp" alt="Laios demonstra Armadura de Agathys" width="760" height="1140">
+          </div>
         </div>
-      </details>
-      <p role="status"></p>
-    </div>
-      <div class="spell-grid">
-        <article class="spell" id="zombaria-viciosa">
-          <a href="./thalyta-zombaria-viciosa.webp" aria-label="Abrir ilustração de Zombaria Viciosa">
-            <img src="./thalyta-zombaria-viciosa.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Zombaria Viciosa">
-          </a>
-          <div class="spell-copy">
-            <h3>Zombaria Viciosa</h3>
-            <p>Uma provocação encantada desestabiliza um alvo.</p>
-          </div>
-        </article>
-        <article class="spell" id="mensagem">
-          <a href="./thalyta-mensagem.webp" aria-label="Abrir ilustração de Mensagem">
-            <img src="./thalyta-mensagem.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Mensagem">
-          </a>
-          <div class="spell-copy">
-            <h3>Mensagem</h3>
-            <p>Thalyta aponta e sussurra. Só a pessoa escolhida ouve e pode responder em segredo.</p>
-          </div>
-        </article>
-        <article class="spell" id="imagem-silenciosa">
-          <a href="./thalyta-imagem-silenciosa.webp" aria-label="Abrir ilustração de Imagem Silenciosa">
-            <img src="./thalyta-imagem-silenciosa.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Imagem Silenciosa">
-          </a>
-          <div class="spell-copy">
-            <h3>Imagem Silenciosa</h3>
-            <p>Uma parede ilusória ocupa parte de um caminho. A imagem é puramente visual.</p>
-          </div>
-        </article>
-        <article class="spell" id="sussurros-dissonantes">
-          <a href="./thalyta-sussurros-dissonantes.webp" aria-label="Abrir ilustração de Sussurros Dissonantes">
-            <img src="./thalyta-sussurros-dissonantes.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Sussurros Dissonantes">
-          </a>
-          <div class="spell-copy">
-            <h3>Sussurros Dissonantes</h3>
-            <p>Uma melodia ouvida na mente leva o alvo a recuar por uma passagem livre.</p>
-          </div>
-        </article>
-        <article class="spell" id="palavra-curativa">
-          <a href="./thalyta-palavra-curativa.webp" aria-label="Abrir ilustração de Palavra Curativa">
-            <img src="./thalyta-palavra-curativa.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Palavra Curativa">
-          </a>
-          <div class="spell-copy">
-            <h3>Palavra Curativa</h3>
-            <p>Uma palavra revigora uma pessoa que Thalyta vê à distância.</p>
-          </div>
-        </article>
-        <article class="spell" id="comando">
-          <a href="./thalyta-comando.webp" aria-label="Abrir ilustração de Comando">
-            <img src="./thalyta-comando.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Comando">
-          </a>
-          <div class="spell-copy">
-            <h3>Comando</h3>
-            <p>Um alvo larga o objeto que segura após receber uma ordem de uma palavra.</p>
-          </div>
-        </article>
-        <article class="spell" id="rajada-mistica">
-          <a href="./thalyta-rajada-mistica.webp" aria-label="Abrir ilustração de Rajada Mística">
-            <img src="./thalyta-rajada-mistica.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Rajada Mística">
-          </a>
-          <div class="spell-copy">
-            <h3>Rajada Mística</h3>
-            <p>Um único feixe de energia crepitante, como no nível atual da personagem.</p>
-          </div>
-        </article>
-        <article class="spell" id="estilhaco-mental">
-          <a href="./thalyta-estilhaco-mental.webp" aria-label="Abrir ilustração de Estilhaço Mental">
-            <img src="./thalyta-estilhaco-mental.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Estilhaço Mental">
-          </a>
-          <div class="spell-copy">
-            <h3>Estilhaço Mental</h3>
-            <p>Uma perturbação psíquica momentânea atinge a mente de um alvo.</p>
-          </div>
-        </article>
-        <article class="spell" id="armadura-de-agathys">
-          <a href="./thalyta-armadura-de-agathys.webp" aria-label="Abrir ilustração de Armadura de Agathys">
-            <img src="./thalyta-armadura-de-agathys.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Armadura de Agathys">
-          </a>
-          <div class="spell-copy">
-            <h3>Armadura de Agathys</h3>
-            <p>Geada mágica protetora envolve Thalyta e seu traje.</p>
-          </div>
-        </article>
-        <article class="spell" id="enfeiticar-pessoa">
-          <a href="./thalyta-enfeiticar-pessoa.webp" aria-label="Abrir ilustração de Enfeitiçar Pessoa">
-            <img src="./thalyta-enfeiticar-pessoa.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Enfeitiçar Pessoa">
-          </a>
-          <div class="spell-copy">
-            <h3>Enfeitiçar Pessoa</h3>
-            <p>A atitude de uma pessoa muda de cautelosa para amistosa.</p>
-          </div>
-        </article>
-        <article class="spell" id="prestidigitacao">
-          <a href="./thalyta-prestidigitacao.webp" aria-label="Abrir ilustração de Prestidigitação">
-            <img src="./thalyta-prestidigitacao.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Prestidigitação">
-          </a>
-          <div class="spell-copy">
-            <h3>Prestidigitação</h3><p class="spell-status">Truque inicial de linhagem</p>
-            <p>O truque inicial da linhagem limpa um pequeno lenço sujo.</p>
-          </div>
-        </article>
-        <article class="spell" id="ilusao-menor">
-          <a href="./thalyta-ilusao-menor.webp" aria-label="Abrir ilustração de Ilusão Menor">
-            <img src="./thalyta-ilusao-menor.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Ilusão Menor">
-          </a>
-          <div class="spell-copy">
-            <h3>Ilusão Menor</h3><p class="spell-status">Troca de linhagem planejada</p>
-            <p>Um baú pequeno e imóvel representa a opção visual da troca de truque planejada.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section id="guia" aria-labelledby="titulo-guia">
+        <h2 class="panelsection">Escolha uma coleção</h2>
+        <div class="portals">
+          <a class="portal" href="#thyago"><span class="portimg" aria-hidden="true"><img src="./thyago-sono.webp" alt="" loading="lazy"></span><span><strong>Thyago</strong><small>8 registros</small></span><span aria-hidden="true">→</span></a>
+          <a class="portal" href="#botanica"><span class="portimg" aria-hidden="true">❧</span><span><strong>Botânica</strong><small>2 registros</small></span><span aria-hidden="true">→</span></a>
+          <a class="portal" href="#culinaria"><span class="portimg" aria-hidden="true">♨</span><span><strong>Culinária</strong><small>3 registros</small></span><span aria-hidden="true">→</span></a>
+          <a class="portal" href="#bestiario"><span class="portimg" aria-hidden="true">♜</span><span><strong>Bestiário</strong><small>3 registros</small></span><span aria-hidden="true">→</span></a>
+          <a class="portal" href="#thalyta"><span class="portimg" aria-hidden="true"><img src="./thalyta-zombaria-viciosa.webp" alt="" loading="lazy"></span><span><strong>Thalyta</strong><small>12 registros</small></span><span aria-hidden="true">→</span></a>
+          <a class="portal" href="#mercile"><span class="portimg" aria-hidden="true"><img src="./mercile-bencao.webp" alt="" loading="lazy"></span><span><strong>Mercile</strong><small>20 registros</small></span><span aria-hidden="true">→</span></a>
+          <a class="portal" href="#alquimia"><span class="portimg" aria-hidden="true">⚗</span><span><strong>Alquimia</strong><small>2 registros</small></span><span aria-hidden="true">→</span></a>
+          <a class="portal" href="#laios"><span class="portimg" aria-hidden="true"><img src="./laios-bencao.webp" alt="" loading="lazy"></span><span><strong>Laios</strong><small>6 registros</small></span><span aria-hidden="true">→</span></a>
+        </div>
+        <aside class="notebox" id="guia" aria-labelledby="titulo-guia">
       <h2 id="titulo-guia">Observar além da aparência</h2>
       <p>Ao investigar uma criatura, o grupo pode procurar sinais de alimentação, abrigo, água, horários, deslocamento e relações com outros habitantes. Essas perguntas podem abrir soluções de observação, diálogo ou passagem segura, conforme o que for realmente descoberto.</p>
       <p>Uma hipótese tem alcance limitado. O que um personagem percebeu precisa ser comunicado aos demais. As cartas de campo registram as observações e descobertas do grupo.</p>
-    </section>
-  </main>
-  <footer>Guia de campo dos jogadores</footer>
+    </aside>
+      </section>
+      <section class="screen" id="thyago" aria-labelledby="titulo-thyago">
+        <div class="sectiontitle"><h2 id="titulo-thyago">✦ Thyago</h2><p>Magias preparadas e truques conhecidos.</p></div>
+        <div class="controls" hidden>
+          <label>Buscar <input type="search" placeholder="Buscar na coleção…"></label>
+          <label>Status<select><option value="">Todos os estados</option><option value="Preparada">Preparada</option><option value="Truque conhecido">Truque conhecido</option></select></label>
+          <button type="button" data-open="true">Expandir cartas</button><button type="button" data-open="false">Recolher cartas</button>
+          <output aria-live="polite"></output>
+        </div>
+        <div class="cards">
+        <details class="card" id="thyago-sono" data-group="Preparada" data-note="thyago/sono">
+          <summary><div class="art"><img src="./thyago-sono.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Concentração</span><h3>Sono</h3><p class="type" lang="en">Sleep</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Alvos escolhidos numa área pequena fazem uma salvaguarda de Sabedoria. A primeira falha os incapacita. A segunda, no fim do turno seguinte, os deixa inconscientes.</p><a href="./thyago-sono.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thyago-escudo" data-group="Preparada" data-note="thyago/escudo">
+          <summary><div class="art"><img src="./thyago-escudo.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Reação</span><h3>Escudo</h3><p class="type" lang="en">Shield</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma barreira imperceptível dá +5 de CA até o começo do próximo turno, inclusive contra o ataque que disparou a reação, e impede o dano de Mísseis Mágicos.</p><a href="./thyago-escudo.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thyago-farpas-prateadas" data-group="Preparada" data-note="thyago/farpas-prateadas">
+          <summary><div class="art"><img src="./thyago-farpas-prateadas.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Reação · Strixhaven</span><h3>Farpas Prateadas</h3><p class="type" lang="en">Silvery Barbs</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Quando uma criatura à vista tem sucesso num ataque, teste de atributo ou salvaguarda, ela rola o d20 de novo e usa o menor resultado. Uma criatura diferente recebe vantagem na próxima dessas jogadas dentro de 1 minuto.</p><a href="./thyago-farpas-prateadas.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thyago-graxa" data-group="Preparada" data-note="thyago/graxa">
+          <summary><div class="art"><img src="./thyago-graxa.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada</span><h3>Graxa</h3><p class="type" lang="en">Grease</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Graxa não inflamável cobre um quadrado de 3 m de lado, criando terreno difícil. Quem estiver ali quando a graxa surge, entrar na área ou terminar o turno nela faz uma salvaguarda de Destreza para não cair.</p><a href="./thyago-graxa.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thyago-explosao-feiticeira" data-group="Truque conhecido" data-note="thyago/explosao-feiticeira">
+          <summary><div class="art"><img src="./thyago-explosao-feiticeira.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Explosão Feiticeira</h3><p class="type" lang="en">Sorcerous Burst</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Ataque à distância que causa 1d8 de dano ácido, elétrico, de fogo, de frio, psíquico, trovejante ou de veneno. Cada 8 permite rolar outro d8, até o limite do modificador de conjuração em dados extras. A arte mostra a variante psíquica.</p><a href="./thyago-explosao-feiticeira.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thyago-estilhaco-mental" data-group="Truque conhecido" data-note="thyago/estilhaco-mental">
+          <summary><div class="art"><img src="./thyago-estilhaco-mental.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Estilhaço Mental</h3><p class="type" lang="en">Mind Sliver</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Se falhar na salvaguarda de Inteligência, o alvo sofre 1d6 de dano psíquico e subtrai 1d4 da próxima salvaguarda que fizer até o fim do próximo turno do Thyago.</p><a href="./thyago-estilhaco-mental.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thyago-mao-magica" data-group="Truque conhecido" data-note="thyago/mao-magica">
+          <summary><div class="art"><img src="./thyago-mao-magica.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Mão Mágica</h3><p class="type" lang="en">Mage Hand</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma mão espectral flutuante manipula objetos leves, como um pergaminho dentro de uma caixa aberta.</p><a href="./thyago-mao-magica.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thyago-ilusao-menor" data-group="Truque conhecido" data-note="thyago/ilusao-menor">
+          <summary><div class="art"><img src="./thyago-ilusao-menor.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Ilusão Menor</h3><p class="type" lang="en">Minor Illusion</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Cria um som ou a imagem de um objeto pequeno. A imagem é silenciosa e intangível.</p><a href="./thyago-ilusao-menor.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        </div>
+      </section>
+      <section class="screen" id="botanica" aria-labelledby="titulo-botanica">
+        <div class="sectiontitle"><h2 id="titulo-botanica">❧ Botânica</h2><p>Herbário e conhecimentos botânicos registrados.</p></div>
+        <div class="controls" hidden>
+          <label>Buscar <input type="search" placeholder="Buscar na coleção…"></label>
+          
+          <button type="button" data-open="true">Expandir cartas</button><button type="button" data-open="false">Recolher cartas</button>
+          <output aria-live="polite"></output>
+        </div>
+        <div class="cards">
+        <details class="card" id="botanica-herbalismo" data-group="Registro confirmado" data-note="botanica/herbalismo">
+          <summary><div class="cardtop"><span class="tag">Registro confirmado</span><h3>Herbalismo da Mercile</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>A ficha da Mercile registra proficiência e equipamento de herbalismo.</p><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="botanica-natureza" data-group="Registro confirmado" data-note="botanica/natureza">
+          <summary><div class="cardtop"><span class="tag">Registro confirmado</span><h3>Natureza do Senshi</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>A ficha de Senshi registra proficiência em Natureza.</p><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        </div>
+      </section>
+      <section class="screen" id="culinaria" aria-labelledby="titulo-culinaria">
+        <div class="sectiontitle"><h2 id="titulo-culinaria">♨ Culinária</h2><p>Receitas comuns do repertório do Senshi.</p></div>
+        <div class="controls" hidden>
+          <label>Buscar <input type="search" placeholder="Buscar na coleção…"></label>
+          
+          <button type="button" data-open="true">Expandir cartas</button><button type="button" data-open="false">Recolher cartas</button>
+          <output aria-live="polite"></output>
+        </div>
+        <div class="cards">
+        <details class="card" id="culinaria-ensopado" data-group="Registro confirmado" data-note="culinaria/ensopado">
+          <summary><div class="cardtop"><span class="tag">Registro confirmado</span><h3>Ensopado de Cogumelos da Caverna</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Receita comum. Usar apenas cogumelos identificados como adequados ao consumo.</p><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="culinaria-espetinhos" data-group="Registro confirmado" data-note="culinaria/espetinhos">
+          <summary><div class="cardtop"><span class="tag">Registro confirmado</span><h3>Espetinhos do Explorador</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Receita comum de viagem. O preparo depende dos ingredientes e utensílios disponíveis.</p><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="culinaria-caldo" data-group="Registro confirmado" data-note="culinaria/caldo">
+          <summary><div class="cardtop"><span class="tag">Registro confirmado</span><h3>Caldo Revigorante do Viajante</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Receita comum de acampamento. O nome faz parte da receita. O caldo não concede cura de pontos de vida.</p><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        </div>
+      </section>
+      <section class="screen" id="bestiario" aria-labelledby="titulo-bestiario">
+        <div class="sectiontitle"><h2 id="titulo-bestiario">♜ Bestiário</h2><p>Criaturas encontradas pelo grupo.</p></div>
+        <div class="controls" hidden>
+          <label>Buscar <input type="search" placeholder="Buscar na coleção…"></label>
+          
+          <button type="button" data-open="true">Expandir cartas</button><button type="button" data-open="false">Recolher cartas</button>
+          <output aria-live="polite"></output>
+        </div>
+        <div class="cards">
+        <details class="card" id="bestiario-goblins" data-group="Registro confirmado" data-note="bestiario/goblins">
+          <summary><div class="cardtop"><span class="tag">Registro confirmado</span><h3>Goblins Cragmaw</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>O grupo encontrou goblins na trilha e no esconderijo Cragmaw.</p><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="bestiario-bugbear" data-group="Registro confirmado" data-note="bestiario/bugbear">
+          <summary><div class="cardtop"><span class="tag">Registro confirmado</span><h3>Bugbear</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>O grupo encontrou e derrotou Klarg, um bugbear, no esconderijo Cragmaw.</p><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="bestiario-lobos" data-group="Registro confirmado" data-note="bestiario/lobos">
+          <summary><div class="cardtop"><span class="tag">Registro confirmado</span><h3>Lobos</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>No esconderijo Cragmaw, o grupo alimentou lobos e os libertou.</p><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        </div>
+      </section>
+      <section class="screen" id="thalyta" aria-labelledby="titulo-thalyta">
+        <div class="sectiontitle"><h2 id="titulo-thalyta">♫ Thalyta</h2><p>Magias de Barda e Bruxa e opções de linhagem.</p></div>
+        <div class="controls" hidden>
+          <label>Buscar <input type="search" placeholder="Buscar na coleção…"></label>
+          <label>Status<select><option value="">Todos os estados</option><option value="Truque conhecido">Truque conhecido</option><option value="Magia de 1º círculo">Magia de 1º círculo</option><option value="Truque inicial de linhagem">Truque inicial de linhagem</option><option value="Troca de linhagem planejada">Troca de linhagem planejada</option></select></label>
+          <button type="button" data-open="true">Expandir cartas</button><button type="button" data-open="false">Recolher cartas</button>
+          <output aria-live="polite"></output>
+        </div>
+        <div class="cards">
+        <details class="card" id="thalyta-zombaria-viciosa" data-group="Truque conhecido" data-note="thalyta/zombaria-viciosa">
+          <summary><div class="art"><img src="./thalyta-zombaria-viciosa.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Zombaria Viciosa</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma provocação encantada desestabiliza um alvo.</p><a href="./thalyta-zombaria-viciosa.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-mensagem" data-group="Truque conhecido" data-note="thalyta/mensagem">
+          <summary><div class="art"><img src="./thalyta-mensagem.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Mensagem</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Thalyta aponta e sussurra. Só a pessoa escolhida ouve e pode responder em segredo.</p><a href="./thalyta-mensagem.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-imagem-silenciosa" data-group="Magia de 1º círculo" data-note="thalyta/imagem-silenciosa">
+          <summary><div class="art"><img src="./thalyta-imagem-silenciosa.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Magia de 1º círculo</span><h3>Imagem Silenciosa</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma parede ilusória ocupa parte de um caminho. A imagem é puramente visual.</p><a href="./thalyta-imagem-silenciosa.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-sussurros-dissonantes" data-group="Magia de 1º círculo" data-note="thalyta/sussurros-dissonantes">
+          <summary><div class="art"><img src="./thalyta-sussurros-dissonantes.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Magia de 1º círculo</span><h3>Sussurros Dissonantes</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma melodia ouvida na mente leva o alvo a recuar por uma passagem livre.</p><a href="./thalyta-sussurros-dissonantes.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-palavra-curativa" data-group="Magia de 1º círculo" data-note="thalyta/palavra-curativa">
+          <summary><div class="art"><img src="./thalyta-palavra-curativa.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Magia de 1º círculo</span><h3>Palavra Curativa</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma palavra revigora uma pessoa que Thalyta vê à distância.</p><a href="./thalyta-palavra-curativa.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-comando" data-group="Magia de 1º círculo" data-note="thalyta/comando">
+          <summary><div class="art"><img src="./thalyta-comando.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Magia de 1º círculo</span><h3>Comando</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Um alvo larga o objeto que segura após receber uma ordem de uma palavra.</p><a href="./thalyta-comando.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-rajada-mistica" data-group="Truque conhecido" data-note="thalyta/rajada-mistica">
+          <summary><div class="art"><img src="./thalyta-rajada-mistica.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Rajada Mística</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Um único feixe de energia crepitante, como no nível atual da personagem.</p><a href="./thalyta-rajada-mistica.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-estilhaco-mental" data-group="Truque conhecido" data-note="thalyta/estilhaco-mental">
+          <summary><div class="art"><img src="./thalyta-estilhaco-mental.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Estilhaço Mental</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma perturbação psíquica momentânea atinge a mente de um alvo.</p><a href="./thalyta-estilhaco-mental.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-armadura-de-agathys" data-group="Magia de 1º círculo" data-note="thalyta/armadura-de-agathys">
+          <summary><div class="art"><img src="./thalyta-armadura-de-agathys.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Magia de 1º círculo</span><h3>Armadura de Agathys</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Geada mágica protetora envolve Thalyta e seu traje.</p><a href="./thalyta-armadura-de-agathys.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-enfeiticar-pessoa" data-group="Magia de 1º círculo" data-note="thalyta/enfeiticar-pessoa">
+          <summary><div class="art"><img src="./thalyta-enfeiticar-pessoa.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Magia de 1º círculo</span><h3>Enfeitiçar Pessoa</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>A atitude de uma pessoa muda de cautelosa para amistosa.</p><a href="./thalyta-enfeiticar-pessoa.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-prestidigitacao" data-group="Truque inicial de linhagem" data-note="thalyta/prestidigitacao">
+          <summary><div class="art"><img src="./thalyta-prestidigitacao.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque inicial de linhagem</span><h3>Prestidigitação</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>O truque inicial da linhagem limpa um pequeno lenço sujo.</p><a href="./thalyta-prestidigitacao.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="thalyta-ilusao-menor" data-group="Troca de linhagem planejada" data-note="thalyta/ilusao-menor">
+          <summary><div class="art"><img src="./thalyta-ilusao-menor.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Troca de linhagem planejada</span><h3>Ilusão Menor</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Um baú pequeno e imóvel representa a opção visual da troca de truque planejada.</p><a href="./thalyta-ilusao-menor.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        </div>
+      </section>
+      <section class="screen" id="mercile" aria-labelledby="titulo-mercile">
+        <div class="sectiontitle"><h2 id="titulo-mercile">✚ Mercile</h2><p>Magias preparadas, opções para preparar e truques.</p></div>
+        <div class="controls" hidden>
+          <label>Buscar <input type="search" placeholder="Buscar na coleção…"></label>
+          <label>Status<select><option value="">Todos os estados</option><option value="Preparada">Preparada</option><option value="Disponível para preparar">Disponível para preparar</option><option value="Truque conhecido">Truque conhecido</option></select></label>
+          <button type="button" data-open="true">Expandir cartas</button><button type="button" data-open="false">Recolher cartas</button>
+          <output aria-live="polite"></output>
+        </div>
+        <div class="cards">
+        <details class="card" id="mercile-bencao" data-group="Preparada" data-note="mercile/bencao">
+          <summary><div class="art"><img src="./mercile-bencao.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Concentração</span><h3>Bênção</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Até três alvos recebem 1d4 extra nas jogadas de ataque e nas salvaguardas.</p><a href="./mercile-bencao.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-curar-ferimentos" data-group="Preparada" data-note="mercile/curar-ferimentos">
+          <summary><div class="art"><img src="./mercile-curar-ferimentos.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada</span><h3>Curar Ferimentos</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Ao tocar uma criatura, restaura 2d8 + modificador de Sabedoria pontos de vida.</p><a href="./mercile-curar-ferimentos.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-detectar-venenos-e-doencas" data-group="Preparada" data-note="mercile/detectar-venenos-e-doencas">
+          <summary><div class="art"><img src="./mercile-detectar-venenos-e-doencas.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Concentração · Ritual</span><h3>Detectar Venenos e Doenças</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Percebe venenos, criaturas venenosas ou peçonhentas e contágios mágicos num raio de 9 m.</p><a href="./mercile-detectar-venenos-e-doencas.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-palavra-curativa" data-group="Preparada" data-note="mercile/palavra-curativa">
+          <summary><div class="art"><img src="./mercile-palavra-curativa.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Ação bônus</span><h3>Palavra Curativa</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Restaura 2d4 + modificador de Sabedoria pontos de vida de uma criatura que a clériga vê a até 18 m.</p><a href="./mercile-palavra-curativa.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-santuario" data-group="Preparada" data-note="mercile/santuario">
+          <summary><div class="art"><img src="./mercile-santuario.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Ação bônus</span><h3>Santuário</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Quem tenta atingir a criatura protegida com um ataque ou magia de dano faz uma salvaguarda de Sabedoria. Em caso de falha, muda de alvo ou perde a tentativa.</p><a href="./mercile-santuario.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-perdicao" data-group="Disponível para preparar" data-note="mercile/perdicao">
+          <summary><div class="art"><img src="./mercile-perdicao.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Disponível para preparar · Concentração</span><h3>Perdição</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Até três criaturas fazem uma salvaguarda de Carisma. Quem falha subtrai 1d4 de ataques e salvaguardas enquanto durar o efeito.</p><a href="./mercile-perdicao.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-comando" data-group="Disponível para preparar" data-note="mercile/comando">
+          <summary><div class="art"><img src="./mercile-comando.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Disponível para preparar</span><h3>Comando</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma ordem de uma palavra é cumprida no próximo turno se o alvo falhar na salvaguarda de Sabedoria.</p><a href="./mercile-comando.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-criar-ou-destruir-agua" data-group="Disponível para preparar" data-note="mercile/criar-ou-destruir-agua">
+          <summary><div class="art"><img src="./mercile-criar-ou-destruir-agua.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Disponível para preparar</span><h3>Criar ou Destruir Água</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Cria água limpa num recipiente aberto ou como chuva. Também pode remover água de um recipiente aberto ou dissipar neblina.</p><a href="./mercile-criar-ou-destruir-agua.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-detectar-bem-e-mal" data-group="Disponível para preparar" data-note="mercile/detectar-bem-e-mal">
+          <summary><div class="art"><img src="./mercile-detectar-bem-e-mal.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Disponível para preparar · Concentração</span><h3>Detectar Bem e Mal</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Localiza certos tipos sobrenaturais, como fadas e mortos-vivos, e áreas sob efeito de Consagrar em até 9 m.</p><a href="./mercile-detectar-bem-e-mal.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-detectar-magia" data-group="Disponível para preparar" data-note="mercile/detectar-magia">
+          <summary><div class="art"><img src="./mercile-detectar-magia.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Disponível para preparar · Concentração · Ritual</span><h3>Detectar Magia</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Percebe efeitos mágicos em até 9 m. Uma ação de Magia permite ver uma aura fraca nos alvos visíveis e identificar a escola de uma magia.</p><a href="./mercile-detectar-magia.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-raio-guiador" data-group="Disponível para preparar" data-note="mercile/raio-guiador">
+          <summary><div class="art"><img src="./mercile-raio-guiador.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Disponível para preparar</span><h3>Raio Guiador</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Um raio radiante causa 4d6 de dano ao acertar e dá vantagem à próxima jogada de ataque contra o alvo dentro da duração.</p><a href="./mercile-raio-guiador.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-infligir-ferimentos" data-group="Disponível para preparar" data-note="mercile/infligir-ferimentos">
+          <summary><div class="art"><img src="./mercile-infligir-ferimentos.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Disponível para preparar</span><h3>Infligir Ferimentos</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma criatura tocada faz uma salvaguarda de Constituição contra 2d10 de dano necrótico, com metade em caso de sucesso.</p><a href="./mercile-infligir-ferimentos.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-protecao-contra-o-bem-e-o-mal" data-group="Disponível para preparar" data-note="mercile/protecao-contra-o-bem-e-o-mal">
+          <summary><div class="art"><img src="./mercile-protecao-contra-o-bem-e-o-mal.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Disponível para preparar · Concentração</span><h3>Proteção Contra o Bem e o Mal</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Protege por toque uma criatura disposta contra ataques e certos efeitos de tipos sobrenaturais. Consome água benta no valor de pelo menos 25 PO.</p><a href="./mercile-protecao-contra-o-bem-e-o-mal.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-purificar-alimentos-e-bebidas" data-group="Disponível para preparar" data-note="mercile/purificar-alimentos-e-bebidas">
+          <summary><div class="art"><img src="./mercile-purificar-alimentos-e-bebidas.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Disponível para preparar · Ritual</span><h3>Purificar Alimentos e Bebidas</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Remove veneno e deterioração de alimentos e bebidas não mágicos na área.</p><a href="./mercile-purificar-alimentos-e-bebidas.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-escudo-da-fe" data-group="Disponível para preparar" data-note="mercile/escudo-da-fe">
+          <summary><div class="art"><img src="./mercile-escudo-da-fe.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Disponível para preparar · Concentração · Ação bônus</span><h3>Escudo da Fé</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Um campo cintilante envolve uma criatura e aumenta sua Classe de Armadura em 2 enquanto durar o efeito.</p><a href="./mercile-escudo-da-fe.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-orientacao" data-group="Truque conhecido" data-note="mercile/orientacao">
+          <summary><div class="art"><img src="./mercile-orientacao.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido · Concentração</span><h3>Orientação</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>A clériga toca uma criatura disposta e escolhe uma perícia. Durante o efeito, a criatura soma 1d4 aos testes dessa perícia.</p><a href="./mercile-orientacao.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-chama-sagrada" data-group="Truque conhecido" data-note="mercile/chama-sagrada">
+          <summary><div class="art"><img src="./mercile-chama-sagrada.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Chama Sagrada</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma luminosidade em forma de chama desce sobre um alvo. Causa 1d8 de dano radiante se ele falhar na salvaguarda de Destreza.</p><a href="./mercile-chama-sagrada.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-sino-dos-mortos" data-group="Truque conhecido" data-note="mercile/sino-dos-mortos">
+          <summary><div class="art"><img src="./mercile-sino-dos-mortos.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Sino dos Mortos</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma badalada soa perto do alvo. Se falhar na salvaguarda de Sabedoria, ele sofre 1d8 de dano necrótico ou 1d12 se já tiver perdido pontos de vida.</p><a href="./mercile-sino-dos-mortos.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-taumaturgia" data-group="Truque conhecido" data-note="mercile/taumaturgia">
+          <summary><div class="art"><img src="./mercile-taumaturgia.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido</span><h3>Taumaturgia</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Provoca um efeito menor, como abrir de súbito uma janela destrancada.</p><a href="./mercile-taumaturgia.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="mercile-prestidigitacao" data-group="Truque conhecido" data-note="mercile/prestidigitacao">
+          <summary><div class="art"><img src="./mercile-prestidigitacao.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido · Linhagem Alta Elfa</span><h3>Prestidigitação</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Faz um pequeno truque, como limpar um lenço, acender uma vela ou produzir um breve efeito sensorial.</p><a href="./mercile-prestidigitacao.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        </div>
+      </section>
+      <section class="screen" id="alquimia" aria-labelledby="titulo-alquimia">
+        <div class="sectiontitle"><h2 id="titulo-alquimia">⚗ Alquimia</h2><p>Equipamento confirmado na ficha.</p></div>
+        <div class="controls" hidden>
+          <label>Buscar <input type="search" placeholder="Buscar na coleção…"></label>
+          
+          <button type="button" data-open="true">Expandir cartas</button><button type="button" data-open="false">Recolher cartas</button>
+          <output aria-live="polite"></output>
+        </div>
+        <div class="cards">
+        <details class="card" id="alquimia-kit-curandeiro" data-group="Registro confirmado" data-note="alquimia/kit-curandeiro">
+          <summary><div class="cardtop"><span class="tag">Registro confirmado</span><h3>Kit de Curandeiro</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Consta na ficha da Mercile como equipamento para atendimento.</p><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="alquimia-kit-herbalismo" data-group="Registro confirmado" data-note="alquimia/kit-herbalismo">
+          <summary><div class="cardtop"><span class="tag">Registro confirmado</span><h3>Kit de Herbalismo</h3><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Consta na ficha da Mercile como ferramenta de trabalho com ervas.</p><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        </div>
+      </section>
+      <section class="screen" id="laios" aria-labelledby="titulo-laios">
+        <div class="sectiontitle"><h2 id="titulo-laios">◆ Laios</h2><p>Magias de Paladino e Bruxo e truques conhecidos.</p></div>
+        <div class="controls" hidden>
+          <label>Buscar <input type="search" placeholder="Buscar na coleção…"></label>
+          <label>Status<select><option value="">Todos os estados</option><option value="Preparada · Paladino">Preparada · Paladino</option><option value="Preparada · Bruxo">Preparada · Bruxo</option><option value="Truque conhecido">Truque conhecido</option></select></label>
+          <button type="button" data-open="true">Expandir cartas</button><button type="button" data-open="false">Recolher cartas</button>
+          <output aria-live="polite"></output>
+        </div>
+        <div class="cards">
+        <details class="card" id="laios-bencao" data-group="Preparada · Paladino" data-note="laios/bencao">
+          <summary><div class="art"><img src="./laios-bencao.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Paladino · 1º círculo · Concentração</span><h3>Bênção</h3><p class="type" lang="en">Bless</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Até três criaturas somam 1d4 às jogadas de ataque e às salvaguardas enquanto a bênção durar.</p><a href="./laios-bencao.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="laios-curar-ferimentos" data-group="Preparada · Paladino" data-note="laios/curar-ferimentos">
+          <summary><div class="art"><img src="./laios-curar-ferimentos.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Paladino · 1º círculo</span><h3>Curar Ferimentos</h3><p class="type" lang="en">Cure Wounds</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Uma criatura tocada recupera 2d8 + o modificador de Carisma em pontos de vida.</p><a href="./laios-curar-ferimentos.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="laios-maldicao" data-group="Preparada · Bruxo" data-note="laios/maldicao">
+          <summary><div class="art"><img src="./laios-maldicao.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Bruxo · 1º círculo · Ação bônus · Concentração</span><h3>Maldição</h3><p class="type" lang="en">Hex</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Amaldiçoa uma criatura. Os ataques de Laios que a acertam causam 1d6 extra de dano necrótico. O alvo também tem desvantagem nos testes de atributo que usam o atributo escolhido.</p><a href="./laios-maldicao.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="laios-armadura-de-agathys" data-group="Preparada · Bruxo" data-note="laios/armadura-de-agathys">
+          <summary><div class="art"><img src="./laios-armadura-de-agathys.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Preparada · Bruxo · 1º círculo · Ação bônus</span><h3>Armadura de Agathys</h3><p class="type" lang="en">Armor of Agathys</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Geada protetora concede 5 pontos de vida temporários. Quem acerta Laios com um ataque corpo a corpo sofre 5 de dano de frio enquanto a magia durar. Ela termina se ele ficar sem pontos de vida temporários.</p><a href="./laios-armadura-de-agathys.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="laios-rajada-mistica" data-group="Truque conhecido" data-note="laios/rajada-mistica">
+          <summary><div class="art"><img src="./laios-rajada-mistica.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido · Bruxo</span><h3>Rajada Mística</h3><p class="type" lang="en">Eldritch Blast</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Dispara um feixe de energia crepitante que causa 1d10 de dano de força se acertar.</p><a href="./laios-rajada-mistica.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        <details class="card" id="laios-lamina-trovejante" data-group="Truque conhecido" data-note="laios/lamina-trovejante">
+          <summary><div class="art"><img src="./laios-lamina-trovejante.webp" alt="" loading="lazy"></div><div class="cardtop"><span class="tag">Truque conhecido · Bruxo · Tasha</span><h3>Lâmina Trovejante</h3><p class="type" lang="en">Booming Blade</p><span class="open" aria-hidden="true"></span></div></summary>
+          <div class="detail"><p>Faz um ataque com uma arma corpo a corpo que vale pelo menos 1 PP. Se acertar, o alvo sofre o dano normal da arma. Se o alvo se mover voluntariamente pelo menos 1,5 m antes do início do próximo turno de Laios, sofre mais 1d8 de dano trovejante.</p><a href="./laios-lamina-trovejante.webp">Abrir ilustração completa</a><label class="notelabel">Anotações pessoais<textarea class="note" rows="2" maxlength="10000"></textarea></label></div>
+        </details>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <details class="backups" hidden>
+        <summary>Backup das anotações</summary><p>As anotações ficam neste navegador. Exporte o arquivo para transferi-las a outro aparelho.</p>
+        <div class="actions"><button type="button" data-export>Exportar anotações</button><label>Importar anotações <input type="file" accept=".json,application/json"></label></div>
+        <p role="status"></p>
+      </details>
+    </footer>
+  </div>
 </body>
 </html>
