@@ -78,6 +78,12 @@
     summary:focus-visible, input:focus-visible, button:focus-visible, textarea:focus-visible, select:focus-visible {
       outline: 2px solid var(--gold); outline-offset: 2px;
     }
+    .facts { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem; }
+    .fact { padding:.45rem;background:var(--paper);border-radius:.4rem;overflow-wrap:anywhere; }
+    .fact dt { color:var(--muted);font-size:.78rem; }
+    .fact dd { margin:0;font-weight:600;font-size:.88rem; }
+    .sec { border-top:1px solid var(--rule);padding-top:.55rem;margin-top:.7rem; }
+    .sec h4 { margin:0;color:var(--gold); }
   </style>
   <script src="./cartas.js" defer></script>
 </head>
@@ -121,7 +127,7 @@
             <p class="spell-status">Preparada · Concentração</p>
             <h3>Sono</h3>
             <p class="original-name" lang="en">Sleep</p>
-            <p>Alvos escolhidos numa área pequena fazem uma salvaguarda de Sabedoria. A primeira falha os incapacita. A segunda, no fim do turno seguinte, os deixa inconscientes.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Encantamento</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>18 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S · M — pitada de areia ou pétalas de rosa</dd></div><div class="fact"><dt>Duração</dt><dd>Até 1 minuto</dd></div><div class="fact"><dt>Concentração</dt><dd>Sim</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Entorpece e pode adormecer alvos escolhidos.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Esfera de 1,5 m de raio. Salvaguarda de Sabedoria ao conjurar e, para quem falhou, no fim do próximo turno do alvo. A primeira falha deixa Incapacitado e a segunda, Inconsciente. Dano ou uma ação para sacudir o alvo a até 1,5 m encerra o efeito nele. Criaturas que não dormem ou imunes à Exaustão passam automaticamente.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Feiticeiro · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="escudo">
@@ -132,7 +138,7 @@
             <p class="spell-status">Preparada · Reação</p>
             <h3>Escudo</h3>
             <p class="original-name" lang="en">Shield</p>
-            <p>Uma barreira imperceptível dá +5 de CA até o começo do próximo turno, inclusive contra o ataque que disparou a reação, e impede o dano de Mísseis Mágicos.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Abjuração</dd></div><div class="fact"><dt>Conjuração</dt><dd>Reação</dd></div><div class="fact"><dt>Alcance</dt><dd>Pessoal</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>1 rodada</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Uma barreira de força imperceptível protege o conjurador.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Reação ao ser atingido por um ataque ou virar alvo de Mísseis Mágicos. +5 de CA até o início do seu próximo turno, inclusive contra o ataque desencadeador. Impede dano de Mísseis Mágicos.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Feiticeiro · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="farpas-prateadas">
@@ -143,7 +149,7 @@
             <p class="spell-status">Preparada · Reação · Strixhaven</p>
             <h3>Farpas Prateadas</h3>
             <p class="original-name" lang="en">Silvery Barbs</p>
-            <p>Quando uma criatura à vista tem sucesso num ataque, teste de atributo ou salvaguarda, ela rola o d20 de novo e usa o menor resultado. Uma criatura diferente recebe vantagem na próxima dessas jogadas dentro de 1 minuto.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Encantamento</dd></div><div class="fact"><dt>Conjuração</dt><dd>Reação</dd></div><div class="fact"><dt>Alcance</dt><dd>18 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Perturba o sucesso de uma criatura e encoraja outra.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Reação quando uma criatura visível a até 18 m tem sucesso num ataque, teste de atributo ou salvaguarda. Ela repete o d20 e usa o menor. Uma criatura diferente que você vê no alcance, inclusive você, tem vantagem na próxima dessas jogadas em até 1 minuto. O benefício não se acumula.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Feiticeiro · <a href="https://www.dndbeyond.com/posts/1371-silvery-barbs-snatch-a-victory-from-the-jaws-of">Strixhaven · 2021</a></p></div>
           </div>
         </article>
         <article class="spell" id="graxa">
@@ -154,7 +160,7 @@
             <p class="spell-status">Preparada</p>
             <h3>Graxa</h3>
             <p class="original-name" lang="en">Grease</p>
-            <p>Graxa não inflamável cobre um quadrado de 3 m de lado, criando terreno difícil. Quem estiver ali quando a graxa surge, entrar na área ou terminar o turno nela faz uma salvaguarda de Destreza para não cair.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Conjuração</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>18 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S · M — toucinho com pele ou manteiga</dd></div><div class="fact"><dt>Duração</dt><dd>1 minuto</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Torna uma parte do chão escorregadia.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Quadrado de 3 m de lado de graxa não inflamável e terreno difícil. Salvaguarda de Destreza ao surgir sob a criatura, ao entrar na área ou ao terminar o turno nela. Falha deixa Caído.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Feiticeiro · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
       </div>
@@ -170,7 +176,7 @@
             <p class="spell-status">Truque conhecido</p>
             <h3>Explosão Feiticeira</h3>
             <p class="original-name" lang="en">Sorcerous Burst</p>
-            <p>Ataque à distância que causa 1d8 de dano ácido, elétrico, de fogo, de frio, psíquico, trovejante ou de veneno. Cada 8 permite rolar outro d8, até o limite do modificador de conjuração em dados extras. A arte mostra a variante psíquica.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Evocação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>36 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Projeta energia feiticeira de um tipo escolhido.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Ataque mágico à distância contra uma criatura ou objeto. 1d8 de ácido, frio, fogo, elétrico, veneno, psíquico ou trovejante. Cada 8 permite outro d8, até um total de dados extras igual ao modificador de conjuração. O dano-base passa a 2d8/3d8/4d8 nos níveis 5/11/17. A arte mostra dano psíquico.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Feiticeiro · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="estilhaco-mental">
@@ -181,7 +187,7 @@
             <p class="spell-status">Truque conhecido</p>
             <h3>Estilhaço Mental</h3>
             <p class="original-name" lang="en">Mind Sliver</p>
-            <p>Se falhar na salvaguarda de Inteligência, o alvo sofre 1d6 de dano psíquico e subtrai 1d4 da próxima salvaguarda que fizer até o fim do próximo turno do Thyago.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Encantamento</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>18 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V</dd></div><div class="fact"><dt>Duração</dt><dd>1 rodada</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Desorienta uma criatura com uma intrusão psíquica.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Salvaguarda de Inteligência. Falha causa 1d6 psíquico e impõe −1d4 à próxima salvaguarda do alvo até o fim do seu próximo turno. Dano de 2d6/3d6/4d6 nos níveis 5/11/17.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Feiticeiro · <a href="https://www.dndbeyond.com/sources/dnd/phb-2024">Player’s Handbook · 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="mao-magica">
@@ -192,7 +198,7 @@
             <p class="spell-status">Truque conhecido</p>
             <h3>Mão Mágica</h3>
             <p class="original-name" lang="en">Mage Hand</p>
-            <p>Uma mão espectral flutuante manipula objetos leves, como um pergaminho dentro de uma caixa aberta.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Conjuração</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>9 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>1 minuto</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Uma mão espectral manipula objetos leves à distância.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Pode abrir recipientes ou portas destrancadas e manipular, retirar ou guardar objetos. Nas rodadas seguintes, uma ação de Magia volta a controlá-la e pode movê-la até 9 m. A mão não ataca, não ativa itens mágicos e carrega até 4,5 kg.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Feiticeiro · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="ilusao-menor">
@@ -203,7 +209,7 @@
             <p class="spell-status">Truque conhecido</p>
             <h3>Ilusão Menor</h3>
             <p class="original-name" lang="en">Minor Illusion</p>
-            <p>Cria um som ou a imagem de um objeto pequeno. A imagem é silenciosa e intangível.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Ilusão</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>9 m</dd></div><div class="fact"><dt>Componentes</dt><dd>S · M — um pouco de lã</dd></div><div class="fact"><dt>Duração</dt><dd>1 minuto</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Cria um som ou a imagem de um objeto.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Imagem de um objeto em cubo de até 1,5 m de lado, sem luz, som ou cheiro. O toque revela a ilusão. Uma ação de Estudar permite identificá-la com Investigação contra a CD de magia.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Feiticeiro · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
       </div>

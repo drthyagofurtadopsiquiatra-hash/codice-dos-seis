@@ -76,6 +76,12 @@
     summary:focus-visible, input:focus-visible, button:focus-visible, textarea:focus-visible, select:focus-visible {
       outline: 2px solid var(--gold); outline-offset: 2px;
     }
+    .facts { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem; }
+    .fact { padding:.45rem;background:var(--paper);border-radius:.4rem;overflow-wrap:anywhere; }
+    .fact dt { color:var(--muted);font-size:.78rem; }
+    .fact dd { margin:0;font-weight:600;font-size:.88rem; }
+    .sec { border-top:1px solid var(--rule);padding-top:.55rem;margin-top:.7rem; }
+    .sec h4 { margin:0;color:var(--gold); }
   </style>
   <script src="./cartas.js" defer></script>
 </head>
@@ -120,7 +126,7 @@
           <div class="spell-copy">
             <p class="spell-status">Preparada · Concentração</p>
             <h3>Bênção</h3>
-            <p>Até três alvos recebem 1d4 extra nas jogadas de ataque e nas salvaguardas.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Encantamento</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>9 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S · M — símbolo sagrado de pelo menos 5 PO</dd></div><div class="fact"><dt>Duração</dt><dd>Até 1 minuto</dd></div><div class="fact"><dt>Concentração</dt><dd>Sim</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Abençoa até três criaturas ao alcance.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Cada alvo soma 1d4 às jogadas de ataque e salvaguardas enquanto durar a concentração. Acrescenta um alvo por círculo acima do primeiro.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="curar-ferimentos">
@@ -130,7 +136,7 @@
           <div class="spell-copy">
             <p class="spell-status">Preparada</p>
             <h3>Curar Ferimentos</h3>
-            <p>Ao tocar uma criatura, restaura 2d8 + modificador de Sabedoria pontos de vida.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Abjuração</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>Toque</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Restaura pontos de vida pelo toque.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Restaura 2d8 + modificador de Sabedoria em PV. Soma 2d8 por círculo acima do primeiro.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="detectar-venenos-e-doencas">
@@ -140,7 +146,7 @@
           <div class="spell-copy">
             <p class="spell-status">Preparada · Concentração · Ritual</p>
             <h3>Detectar Venenos e Doenças</h3>
-            <p>Percebe venenos, criaturas venenosas ou peçonhentas e contágios mágicos num raio de 9 m.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Adivinhação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação ou ritual</dd></div><div class="fact"><dt>Alcance</dt><dd>Pessoal</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S · M — folha de teixo</dd></div><div class="fact"><dt>Duração</dt><dd>Até 10 minutos</dd></div><div class="fact"><dt>Concentração</dt><dd>Sim</dd></div><div class="fact"><dt>Ritual</dt><dd>Sim</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Percebe venenos e contágios mágicos próximos.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Detecta a posição e o tipo de veneno, criatura venenosa ou peçonhenta ou contágio mágico em até 9 m. Espessuras suficientes de pedra, terra, madeira, metal ou uma folha de chumbo bloqueiam a percepção.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="palavra-curativa">
@@ -150,7 +156,7 @@
           <div class="spell-copy">
             <p class="spell-status">Preparada · Ação bônus</p>
             <h3>Palavra Curativa</h3>
-            <p>Restaura 2d4 + modificador de Sabedoria pontos de vida de uma criatura que a clériga vê a até 18 m.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Abjuração</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação bônus</dd></div><div class="fact"><dt>Alcance</dt><dd>18 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Revigora uma criatura visível à distância.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Restaura 2d4 + modificador de Sabedoria em PV. Soma 2d4 por círculo acima do primeiro.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="santuario">
@@ -160,7 +166,7 @@
           <div class="spell-copy">
             <p class="spell-status">Preparada · Ação bônus</p>
             <h3>Santuário</h3>
-            <p>Quem tenta atingir a criatura protegida com um ataque ou magia de dano faz uma salvaguarda de Sabedoria. Em caso de falha, muda de alvo ou perde a tentativa.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Abjuração</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação bônus</dd></div><div class="fact"><dt>Alcance</dt><dd>9 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S · M — fragmento de espelho</dd></div><div class="fact"><dt>Duração</dt><dd>1 minuto</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Protege uma criatura contra tentativas de ataque direcionadas.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Quem tenta atingi-la com ataque ou magia de dano faz salvaguarda de Sabedoria. Em falha, escolhe outro alvo ou perde a tentativa. Efeitos de área seguem normalmente. Termina se a criatura protegida atacar, conjurar ou causar dano.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
       </div>
@@ -176,7 +182,7 @@
           <div class="spell-copy">
             <p class="spell-status">Disponível para preparar · Concentração</p>
             <h3>Perdição</h3>
-            <p>Até três criaturas fazem uma salvaguarda de Carisma. Quem falha subtrai 1d4 de ataques e salvaguardas enquanto durar o efeito.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Encantamento</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>9 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S · M — gota de sangue</dd></div><div class="fact"><dt>Duração</dt><dd>Até 1 minuto</dd></div><div class="fact"><dt>Concentração</dt><dd>Sim</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Enfraquece as jogadas de até três criaturas.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Salvaguarda de Carisma. Quem falha subtrai 1d4 de ataques e salvaguardas enquanto durar a concentração. Acrescenta um alvo por círculo acima do primeiro.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="comando">
@@ -186,7 +192,7 @@
           <div class="spell-copy">
             <p class="spell-status">Disponível para preparar</p>
             <h3>Comando</h3>
-            <p>Uma ordem de uma palavra é cumprida no próximo turno se o alvo falhar na salvaguarda de Sabedoria.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Encantamento</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>18 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Impõe uma ordem breve a uma criatura.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Salvaguarda de Sabedoria. Em falha, o alvo obedece no próximo turno. Opções da regra: aproximar-se, largar, fugir, prostrar-se ou parar. Acrescenta um alvo por círculo acima do primeiro.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="criar-ou-destruir-agua">
@@ -196,7 +202,7 @@
           <div class="spell-copy">
             <p class="spell-status">Disponível para preparar</p>
             <h3>Criar ou Destruir Água</h3>
-            <p>Cria água limpa num recipiente aberto ou como chuva. Também pode remover água de um recipiente aberto ou dissipar neblina.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Transmutação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>9 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S · M — mistura de água e areia</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Cria água limpa ou retira água de uma área.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Cria até 38 L em recipiente aberto ou chuva num cubo de 9 m de lado. Pode destruir até 38 L em recipiente aberto ou dissipar neblina num cubo de 9 m de lado.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="detectar-bem-e-mal">
@@ -206,7 +212,7 @@
           <div class="spell-copy">
             <p class="spell-status">Disponível para preparar · Concentração</p>
             <h3>Detectar Bem e Mal</h3>
-            <p>Localiza certos tipos sobrenaturais, como fadas e mortos-vivos, e áreas sob efeito de Consagrar em até 9 m.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Adivinhação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>Pessoal</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Até 10 minutos</dd></div><div class="fact"><dt>Concentração</dt><dd>Sim</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Percebe certos tipos sobrenaturais e áreas consagradas.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Localiza aberrações, celestiais, elementais, fadas, ínferos, mortos-vivos e efeitos de Consagrar em até 9 m. Certas barreiras bloqueiam a percepção.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="detectar-magia">
@@ -216,7 +222,7 @@
           <div class="spell-copy">
             <p class="spell-status">Disponível para preparar · Concentração · Ritual</p>
             <h3>Detectar Magia</h3>
-            <p>Percebe efeitos mágicos em até 9 m. Uma ação de Magia permite ver uma aura fraca nos alvos visíveis e identificar a escola de uma magia.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Adivinhação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação ou ritual</dd></div><div class="fact"><dt>Alcance</dt><dd>Pessoal</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Até 10 minutos</dd></div><div class="fact"><dt>Concentração</dt><dd>Sim</dd></div><div class="fact"><dt>Ritual</dt><dd>Sim</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Percebe efeitos mágicos nas proximidades.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Percebe magia em até 9 m. Uma ação de Magia revela aura fraca em criatura ou objeto visível que porta o efeito e, se ele veio de uma magia, sua escola. Certas barreiras bloqueiam a percepção.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="raio-guiador">
@@ -226,7 +232,7 @@
           <div class="spell-copy">
             <p class="spell-status">Disponível para preparar</p>
             <h3>Raio Guiador</h3>
-            <p>Um raio radiante causa 4d6 de dano ao acertar e dá vantagem à próxima jogada de ataque contra o alvo dentro da duração.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Evocação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>36 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>1 rodada</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Um raio radiante marca o alvo com luz.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Ataque mágico à distância. Acerto causa 4d6 radiante. A próxima jogada de ataque contra esse alvo antes do fim do seu próximo turno tem vantagem. Soma 1d6 por círculo acima do primeiro.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="infligir-ferimentos">
@@ -236,7 +242,7 @@
           <div class="spell-copy">
             <p class="spell-status">Disponível para preparar</p>
             <h3>Infligir Ferimentos</h3>
-            <p>Uma criatura tocada faz uma salvaguarda de Constituição contra 2d10 de dano necrótico, com metade em caso de sucesso.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Necromancia</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>Toque</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Causa dano necrótico pelo toque.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Salvaguarda de Constituição. Falha causa 2d10 necrótico e sucesso, metade. Soma 1d10 por círculo acima do primeiro.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="protecao-contra-o-bem-e-o-mal">
@@ -246,7 +252,7 @@
           <div class="spell-copy">
             <p class="spell-status">Disponível para preparar · Concentração</p>
             <h3>Proteção Contra o Bem e o Mal</h3>
-            <p>Protege por toque uma criatura disposta contra ataques e certos efeitos de tipos sobrenaturais. Consome água benta no valor de pelo menos 25 PO.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Abjuração</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>Toque</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S · M — água benta de pelo menos 25 PO, consumida</dd></div><div class="fact"><dt>Duração</dt><dd>Até 10 minutos</dd></div><div class="fact"><dt>Concentração</dt><dd>Sim</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Resguarda uma criatura disposta contra certos seres sobrenaturais.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Aberrações, celestiais, elementais, fadas, ínferos e mortos-vivos têm desvantagem para atacar o alvo. Esses seres também não podem possuí-lo, Enfeitiçá-lo ou Amedrontá-lo. Se já estiver sob um desses efeitos, tem vantagem em novas salvaguardas contra ele.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="purificar-alimentos-e-bebidas">
@@ -256,7 +262,7 @@
           <div class="spell-copy">
             <p class="spell-status">Disponível para preparar · Ritual</p>
             <h3>Purificar Alimentos e Bebidas</h3>
-            <p>Remove veneno e deterioração de alimentos e bebidas não mágicos na área.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Transmutação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação ou ritual</dd></div><div class="fact"><dt>Alcance</dt><dd>3 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Sim</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Purifica comida e bebida não mágicas.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Remove veneno e deterioração de alimentos e bebidas numa esfera de 1,5 m de raio.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="escudo-da-fe">
@@ -266,7 +272,7 @@
           <div class="spell-copy">
             <p class="spell-status">Disponível para preparar · Concentração · Ação bônus</p>
             <h3>Escudo da Fé</h3>
-            <p>Um campo cintilante envolve uma criatura e aumenta sua Classe de Armadura em 2 enquanto durar o efeito.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>1º círculo</dd></div><div class="fact"><dt>Escola</dt><dd>Abjuração</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação bônus</dd></div><div class="fact"><dt>Alcance</dt><dd>18 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S · M — pergaminho com uma prece</dd></div><div class="fact"><dt>Duração</dt><dd>Até 10 minutos</dd></div><div class="fact"><dt>Concentração</dt><dd>Sim</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Cria um campo protetor cintilante em torno de uma criatura.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>A criatura escolhida recebe +2 de CA enquanto durar a concentração.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
       </div>
@@ -282,7 +288,7 @@
           <div class="spell-copy">
             <p class="spell-status">Truque conhecido · Concentração</p>
             <h3>Orientação</h3>
-            <p>A clériga toca uma criatura disposta e escolhe uma perícia. Durante o efeito, a criatura soma 1d4 aos testes dessa perícia.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Adivinhação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>Toque</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Até 1 minuto</dd></div><div class="fact"><dt>Concentração</dt><dd>Sim</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Auxilia uma criatura disposta em uma perícia escolhida.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>A criatura tocada soma 1d4 a cada teste com a perícia escolhida enquanto durar a concentração.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="chama-sagrada">
@@ -292,7 +298,7 @@
           <div class="spell-copy">
             <p class="spell-status">Truque conhecido</p>
             <h3>Chama Sagrada</h3>
-            <p>Uma luminosidade em forma de chama desce sobre um alvo. Causa 1d8 de dano radiante se ele falhar na salvaguarda de Destreza.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Evocação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>18 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Faz descer luminosidade em forma de chama.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Salvaguarda de Destreza ou 1d8 radiante. Meia cobertura e cobertura de três quartos não beneficiam o alvo nessa salvaguarda. Dano de 2d8/3d8/4d8 nos níveis 5/11/17.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="sino-dos-mortos">
@@ -302,7 +308,7 @@
           <div class="spell-copy">
             <p class="spell-status">Truque conhecido</p>
             <h3>Sino dos Mortos</h3>
-            <p>Uma badalada soa perto do alvo. Se falhar na salvaguarda de Sabedoria, ele sofre 1d8 de dano necrótico ou 1d12 se já tiver perdido pontos de vida.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Necromancia</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>18 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Uma badalada fúnebre soa perto da criatura escolhida.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Salvaguarda de Sabedoria. Falha causa 1d8 necrótico ou 1d12 se o alvo já perdeu PV. Acrescenta um dado nos níveis 5, 11 e 17.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/phb-2024">Player’s Handbook · 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="taumaturgia">
@@ -312,7 +318,7 @@
           <div class="spell-copy">
             <p class="spell-status">Truque conhecido</p>
             <h3>Taumaturgia</h3>
-            <p>Provoca um efeito menor, como abrir de súbito uma janela destrancada.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Transmutação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>9 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V</dd></div><div class="fact"><dt>Duração</dt><dd>Até 1 minuto</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Manifesta um pequeno prodígio.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Escolha alterar os olhos, amplificar a voz, mudar chamas, abrir ou fechar algo destrancado, produzir som fantasma ou fazer o chão tremer. Até três efeitos de 1 minuto podem coexistir.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Clériga · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="prestidigitacao">
@@ -322,7 +328,7 @@
           <div class="spell-copy">
             <p class="spell-status">Truque conhecido · Linhagem Alta Elfa</p>
             <h3>Prestidigitação</h3>
-            <p>Faz um pequeno truque, como limpar um lenço, acender uma vela ou produzir um breve efeito sensorial.</p>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Transmutação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>3 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Até 1 hora</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Produz um pequeno efeito mágico cotidiano.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Escolha um efeito sensorial, fogo menor, limpeza ou sujeira, temperatura ou sabor, marca ou pequena criação temporária. Até três efeitos não instantâneos podem coexistir.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Linhagem Alta Elfa · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
       </div>

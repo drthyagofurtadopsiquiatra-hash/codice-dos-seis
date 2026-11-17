@@ -23,3 +23,8 @@
 .detail a{display:inline-block;min-height:44px;padding-block:9px}
 :focus-visible{outline:3px solid #cba4f1;outline-offset:2px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.facts{margin:0 0 .7rem}
+.fact dt{font-size:.78rem;color:#c2b3c8}
+.fact dd{margin:.2rem 0 0;font-size:.9rem;font-weight:650;color:#f7ebdb}
+.detail .sec a{min-height:0;padding:0;display:inline}
