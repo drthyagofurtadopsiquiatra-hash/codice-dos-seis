@@ -58,7 +58,26 @@
     .spell:target { outline: 2px solid var(--gold); outline-offset: 2px; }
     .spell-status { color: var(--gold); margin: 0 0 .5rem; }
     .spell h3 { overflow-wrap: anywhere; }
+    [hidden] { display: none !important; }
+    .card-tools { grid-column: 1 / -1; background: var(--paper); border: 1px solid var(--rule); padding: 1rem; }
+    .tool-row { display: flex; flex-wrap: wrap; align-items: end; gap: .65rem; }
+    .card-tools label, .spell-copy label { display: block; font-size: .86rem; }
+    .card-tools input, .card-tools select, .card-tools button, .spell-copy textarea {
+      color: var(--ink); background: var(--forest); border: 1px solid var(--rule);
+      border-radius: .2rem; font: inherit; padding: .45rem .6rem; max-width: 100%;
+    }
+    .card-tools input, .card-tools select, .card-tools button { min-height: 44px; }
+    .card-tools input, .card-tools select { display: block; }
+    .card-tools output, .card-tools [role="status"] { color: var(--muted); font-size: .9rem; }
+    .card-tools details { margin-top: .55rem; }
+    .spell summary { cursor: pointer; padding: .7rem 1rem; color: var(--gold); }
+    .spell summary h3 { display: inline; }
+    .spell-copy textarea { display: block; width: 100%; resize: vertical; }
+    summary:focus-visible, input:focus-visible, button:focus-visible, textarea:focus-visible, select:focus-visible {
+      outline: 2px solid var(--gold); outline-offset: 2px;
+    }
   </style>
+  <script src="./cartas.js" defer></script>
 </head>
 <body>
   <header>
@@ -72,6 +91,24 @@
     </nav>
   </header>
   <main>
+    <div class="card-tools" data-collection="mercile" hidden>
+      <div class="tool-row">
+        <label>Buscar magia <input type="search" placeholder="Nome da magia"></label>
+        <label>Grupo <select><option value="">Todas as cartas</option></select></label>
+        <button type="button" data-expand="true">Expandir cartas</button>
+        <button type="button" data-expand="false">Recolher cartas</button>
+        <output aria-live="polite"></output>
+      </div>
+      <details>
+        <summary>Backup das anotações</summary>
+        <p>As anotações ficam neste navegador. Exporte o arquivo para usá-las em outro aparelho.</p>
+        <div class="tool-row">
+          <button type="button" data-export>Exportar anotações</button>
+          <label>Importar anotações <input type="file" accept=".json,application/json"></label>
+        </div>
+      </details>
+      <p role="status"></p>
+    </div>
     <section class="deck" id="preparadas" aria-labelledby="titulo-preparadas">
       <h2 id="titulo-preparadas">Preparadas · 1º círculo</h2>
       <p>Seleção registrada na ficha da Mercile. As magias com a indicação Ritual também podem ser conjuradas dessa forma enquanto estiverem preparadas.</p>
