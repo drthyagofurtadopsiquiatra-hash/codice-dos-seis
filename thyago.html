@@ -38,7 +38,7 @@
     .spell-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 1.25rem; }
     .spell { border: 1px solid var(--rule); background: var(--forest); }
     .spell a { display: block; }
-    .spell img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: contain; }
+    .spell img { display: block; width: 100%; height: auto; object-fit: contain; }
     .spell-copy { padding: 1rem; }
     .spell h3 { font: 400 1.45rem Georgia, serif; margin: 0 0 .55rem; }
     .spell-status { color: var(--gold); font-size: .85rem; }
@@ -92,6 +92,7 @@
     <a class="back" href="./">← Códice dos Seis</a>
     <h1>Magias do Thyago</h1>
     <p>Feiticeiro de nível 2 · Shadar-kai</p>
+    <p>As artes clássicas interpretam visualmente as magias. A ficha descreve o efeito em jogo.</p>
     <nav aria-label="Grupos de magias">
       <a href="#preparadas">Preparadas (4)</a>
       <a href="#truques">Truques conhecidos (4)</a>
@@ -120,8 +121,8 @@
       <h2 id="titulo-preparadas">Preparadas · 1º círculo</h2>
       <div class="spell-grid">
         <article class="spell" id="sono">
-          <a href="./thyago-sono.webp" aria-label="Abrir ilustração de Sono">
-            <img src="./thyago-sono.webp" width="760" height="1140" loading="lazy" alt="Thyago demonstra Sono">
+          <a href="./thyago-classico-sono.webp" aria-label="Abrir ilustração de Sono">
+            <img src="./thyago-classico-sono.webp" width="480" height="285" loading="lazy" alt="Arte clássica de Sono">
           </a>
           <div class="spell-copy">
             <p class="spell-status">Preparada · Concentração</p>
@@ -131,8 +132,8 @@
           </div>
         </article>
         <article class="spell" id="escudo">
-          <a href="./thyago-escudo.webp" aria-label="Abrir ilustração de Escudo">
-            <img src="./thyago-escudo.webp" width="760" height="1140" loading="lazy" alt="Thyago demonstra Escudo">
+          <a href="./thyago-classico-escudo.webp" aria-label="Abrir ilustração de Escudo">
+            <img src="./thyago-classico-escudo.webp" width="480" height="285" loading="lazy" alt="Arte clássica de Escudo">
           </a>
           <div class="spell-copy">
             <p class="spell-status">Preparada · Reação</p>
@@ -142,8 +143,8 @@
           </div>
         </article>
         <article class="spell" id="farpas-prateadas">
-          <a href="./thyago-farpas-prateadas.webp" aria-label="Abrir ilustração de Farpas Prateadas">
-            <img src="./thyago-farpas-prateadas.webp" width="760" height="1140" loading="lazy" alt="Thyago demonstra Farpas Prateadas">
+          <a href="./thyago-classico-farpas-prateadas.webp" aria-label="Abrir ilustração de Farpas Prateadas">
+            <img src="./thyago-classico-farpas-prateadas.webp" width="480" height="285" loading="lazy" alt="Arte clássica de Farpas Prateadas">
           </a>
           <div class="spell-copy">
             <p class="spell-status">Preparada · Reação · Strixhaven</p>
@@ -153,8 +154,8 @@
           </div>
         </article>
         <article class="spell" id="graxa">
-          <a href="./thyago-graxa.webp" aria-label="Abrir ilustração de Graxa">
-            <img src="./thyago-graxa.webp" width="760" height="1140" loading="lazy" alt="Thyago demonstra Graxa">
+          <a href="./thyago-classico-graxa.webp" aria-label="Abrir ilustração de Graxa">
+            <img src="./thyago-classico-graxa.webp" width="480" height="285" loading="lazy" alt="Arte clássica de Graxa">
           </a>
           <div class="spell-copy">
             <p class="spell-status">Preparada</p>
@@ -169,19 +170,19 @@
       <h2 id="titulo-truques">Truques conhecidos</h2>
       <div class="spell-grid">
         <article class="spell" id="explosao-feiticeira">
-          <a href="./thyago-explosao-feiticeira.webp" aria-label="Abrir ilustração de Explosão Feiticeira">
-            <img src="./thyago-explosao-feiticeira.webp" width="760" height="1140" loading="lazy" alt="Thyago demonstra Explosão Feiticeira">
+          <a href="./thyago-classico-explosao-feiticeira.webp" aria-label="Abrir ilustração de Explosão Feiticeira">
+            <img src="./thyago-classico-explosao-feiticeira.webp" width="480" height="285" loading="lazy" alt="Arte clássica de Explosão Feiticeira">
           </a>
           <div class="spell-copy">
             <p class="spell-status">Truque conhecido</p>
             <h3>Explosão Feiticeira</h3>
             <p class="original-name" lang="en">Sorcerous Burst</p>
-            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Evocação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>36 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Projeta energia feiticeira de um tipo escolhido.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Ataque mágico à distância contra uma criatura ou objeto. 1d8 de ácido, frio, fogo, elétrico, veneno, psíquico ou trovejante. Cada 8 permite outro d8, até um total de dados extras igual ao modificador de conjuração. O dano-base passa a 2d8/3d8/4d8 nos níveis 5/11/17. A arte mostra dano psíquico.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Feiticeiro · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
+            <dl class="facts" aria-label="Dados mecânicos"><div class="fact"><dt>Círculo</dt><dd>Truque</dd></div><div class="fact"><dt>Escola</dt><dd>Evocação</dd></div><div class="fact"><dt>Conjuração</dt><dd>Ação</dd></div><div class="fact"><dt>Alcance</dt><dd>36 m</dd></div><div class="fact"><dt>Componentes</dt><dd>V · S</dd></div><div class="fact"><dt>Duração</dt><dd>Instantânea</dd></div><div class="fact"><dt>Concentração</dt><dd>Não</dd></div><div class="fact"><dt>Ritual</dt><dd>Não</dd></div></dl><div class="sec"><h4>Descrição</h4><p>Projeta energia feiticeira de um tipo escolhido.</p></div><div class="sec"><h4>Regras e mecânicas</h4><p>Ataque mágico à distância contra uma criatura ou objeto. 1d8 de ácido, frio, fogo, elétrico, veneno, psíquico ou trovejante. Cada 8 permite outro d8, até um total de dados extras igual ao modificador de conjuração. O dano-base passa a 2d8/3d8/4d8 nos níveis 5/11/17. A arte estiliza diferentes tipos de energia. Escolha um tipo por conjuração.</p></div><div class="sec"><h4>Origem e fonte</h4><p>Feiticeiro · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a></p></div>
           </div>
         </article>
         <article class="spell" id="estilhaco-mental">
-          <a href="./thyago-estilhaco-mental.webp" aria-label="Abrir ilustração de Estilhaço Mental">
-            <img src="./thyago-estilhaco-mental.webp" width="760" height="1140" loading="lazy" alt="Thyago demonstra Estilhaço Mental">
+          <a href="./thyago-classico-estilhaco-mental.webp" aria-label="Abrir ilustração de Estilhaço Mental">
+            <img src="./thyago-classico-estilhaco-mental.webp" width="480" height="285" loading="lazy" alt="Arte clássica de Estilhaço Mental">
           </a>
           <div class="spell-copy">
             <p class="spell-status">Truque conhecido</p>
@@ -191,8 +192,8 @@
           </div>
         </article>
         <article class="spell" id="mao-magica">
-          <a href="./thyago-mao-magica.webp" aria-label="Abrir ilustração de Mão Mágica">
-            <img src="./thyago-mao-magica.webp" width="760" height="1140" loading="lazy" alt="Thyago demonstra Mão Mágica">
+          <a href="./thyago-classico-mao-magica.webp" aria-label="Abrir ilustração de Mão Mágica">
+            <img src="./thyago-classico-mao-magica.webp" width="480" height="285" loading="lazy" alt="Arte clássica de Mão Mágica">
           </a>
           <div class="spell-copy">
             <p class="spell-status">Truque conhecido</p>
@@ -202,8 +203,8 @@
           </div>
         </article>
         <article class="spell" id="ilusao-menor">
-          <a href="./thyago-ilusao-menor.webp" aria-label="Abrir ilustração de Ilusão Menor">
-            <img src="./thyago-ilusao-menor.webp" width="760" height="1140" loading="lazy" alt="Thyago demonstra Ilusão Menor">
+          <a href="./thyago-classico-ilusao-menor.webp" aria-label="Abrir ilustração de Ilusão Menor">
+            <img src="./thyago-classico-ilusao-menor.webp" width="480" height="285" loading="lazy" alt="Arte clássica de Ilusão Menor">
           </a>
           <div class="spell-copy">
             <p class="spell-status">Truque conhecido</p>
