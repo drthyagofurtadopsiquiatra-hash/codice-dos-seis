@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Culinária, Bestiário, Alquimia e Botânica do Códice dos Seis.">
+  <link rel="icon" href="data:,">
+  <title>Coleções de campo · Códice dos Seis</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #e8e4d8;
+      --muted: #c8c9b9;
+      --gold: #ecd18d;
+      --forest: #151f1c;
+      --paper: #212f29;
+      --rule: #536057;
+      background: var(--forest);
+      color: var(--ink);
+      font: 112.5%/1.65 system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header, main, footer { max-width: 66rem; margin-inline: auto; padding-inline: clamp(1.25rem, 6vw, 4rem); }
+    header { padding-block: clamp(2.5rem, 10vw, 6rem) 2rem; }
+    h1, h2 { font-family: Georgia, serif; font-weight: 400; line-height: 1.08; }
+    h1 { max-width: 11ch; font-size: clamp(3rem, 9vw, 6.4rem); margin: 0 0 1.15rem; }
+    h2 { font-size: clamp(1.75rem, 4vw, 2.6rem); margin: 0 0 1rem; }
+    p { max-width: 62ch; margin: 0 0 1rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+    nav a { display: inline-flex; align-items: center; min-height: 44px; }
+    a { color: var(--gold); text-underline-offset: .22em; }
+    a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+    main { display: grid; gap: 1.5rem; }
+    section { background: var(--paper); border: 1px solid var(--rule); padding: clamp(1rem, 4vw, 2rem); }
+    #cartas { border-block-start: 4px double var(--gold); }
+    #cartas, #guia { grid-column: 1 / -1; }
+    .spell-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 1.25rem; }
+    .spell { border: 1px solid var(--rule); background: var(--forest); }
+    .spell a { display: block; }
+    .spell img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: contain; }
+    .spell-copy { padding: 1rem; }
+    .spell h3 { font: 400 1.45rem Georgia, serif; margin: 0 0 .55rem; }
+    .spell-status { color: var(--gold); font-size: .85rem; }
+    section p:last-child { margin-bottom: 0; }
+    footer { color: var(--muted); padding-block: 2rem; font-size: .9rem; }
+    @media (min-width: 52rem) {
+      main { grid-template-columns: 1fr 1.4fr; align-items: start; }
+    }
+    .collection { grid-column: 1 / -1; scroll-margin-block-start: 1rem; border-block-start: 3px double var(--gold); }
+    .caption { color: var(--muted); }
+    .entry-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+    article { padding: 1rem; background: var(--forest); border: 1px solid var(--rule); }
+    article h3 { font: 400 1.3rem Georgia, serif; margin: 0 0 .7rem; }
+    .back { display: inline-flex; align-items: center; min-height: 44px; margin-block-end: 1rem; }
+    h1 { max-width: 14ch; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back" href="./">← Códice dos Seis</a>
+    <h1>Coleções de campo</h1>
+    <nav aria-label="Coleções de campo">
+      <a href="#culinaria">Culinária</a>
+      <a href="#bestiario">Bestiário</a>
+      <a href="#alquimia">Alquimia</a>
+      <a href="#botanica">Botânica</a>
+    </nav>
+  </header>
+  <main>
+    <section class="collection" id="culinaria" aria-labelledby="titulo-culinaria">
+      <h2 id="titulo-culinaria">Culinária</h2>
+      <p class="caption">Repertório de Senshi</p>
+      <div class="entry-grid">
+        <article id="culinaria-ensopado">
+          <h3>Ensopado de Cogumelos da Caverna</h3>
+          <p>Receita comum. Usar apenas cogumelos identificados como adequados ao consumo.</p>
+        </article>
+        <article id="culinaria-espetinhos">
+          <h3>Espetinhos do Explorador</h3>
+          <p>Receita comum de viagem. O preparo depende dos ingredientes e utensílios disponíveis.</p>
+        </article>
+        <article id="culinaria-caldo">
+          <h3>Caldo Revigorante do Viajante</h3>
+          <p>Receita comum de acampamento. O nome faz parte da receita. O caldo não concede cura de pontos de vida.</p>
+        </article>
+      </div>
+    </section>
+    <section class="collection" id="bestiario" aria-labelledby="titulo-bestiario">
+      <h2 id="titulo-bestiario">Bestiário</h2>
+      <p class="caption">Observações do grupo</p>
+      <div class="entry-grid">
+        <article id="bestiario-goblins">
+          <h3>Goblins Cragmaw</h3>
+          <p>O grupo encontrou goblins na trilha e no esconderijo Cragmaw.</p>
+        </article>
+        <article id="bestiario-bugbear">
+          <h3>Bugbear</h3>
+          <p>O grupo encontrou e derrotou Klarg, um bugbear, no esconderijo Cragmaw.</p>
+        </article>
+        <article id="bestiario-lobos">
+          <h3>Lobos</h3>
+          <p>No esconderijo Cragmaw, o grupo alimentou lobos e os libertou.</p>
+        </article>
+      </div>
+    </section>
+    <section class="collection" id="alquimia" aria-labelledby="titulo-alquimia">
+      <h2 id="titulo-alquimia">Alquimia</h2>
+      <p class="caption">Equipamento registrado</p>
+      <div class="entry-grid">
+        <article id="alquimia-kit-curandeiro">
+          <h3>Kit de Curandeiro</h3>
+          <p>Consta na ficha da Mercile como equipamento para atendimento.</p>
+        </article>
+        <article id="alquimia-kit-herbalismo">
+          <h3>Kit de Herbalismo</h3>
+          <p>Consta na ficha da Mercile como ferramenta de trabalho com ervas.</p>
+        </article>
+      </div>
+    </section>
+    <section class="collection" id="botanica" aria-labelledby="titulo-botanica">
+      <h2 id="titulo-botanica">Botânica</h2>
+      <p class="caption">Perícia e ferramentas registradas</p>
+      <div class="entry-grid">
+        <article id="botanica-herbalismo">
+          <h3>Herbalismo da Mercile</h3>
+          <p>A ficha da Mercile registra proficiência e equipamento de herbalismo.</p>
+        </article>
+        <article id="botanica-natureza">
+          <h3>Natureza do Senshi</h3>
+          <p>A ficha de Senshi registra proficiência em Natureza.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>Guia de campo dos jogadores</footer>
+</body>
+</html>
