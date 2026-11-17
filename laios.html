@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Magias preparadas de Paladino e Bruxo e truques conhecidos de Laios.">
+  <link rel="icon" href="data:,">
+  <title>Magias do Laios · Códice dos Seis</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #e8e4d8;
+      --muted: #c8c9b9;
+      --gold: #ecd18d;
+      --forest: #151f1c;
+      --paper: #212f29;
+      --rule: #536057;
+      background: var(--forest);
+      color: var(--ink);
+      font: 112.5%/1.65 system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header, main, footer { max-width: 66rem; margin-inline: auto; padding-inline: clamp(1.25rem, 6vw, 4rem); }
+    header { padding-block: clamp(2.5rem, 10vw, 6rem) 2rem; }
+    h1, h2 { font-family: Georgia, serif; font-weight: 400; line-height: 1.08; }
+    h1 { max-width: 11ch; font-size: clamp(3rem, 9vw, 6.4rem); margin: 0 0 1.15rem; }
+    h2 { font-size: clamp(1.75rem, 4vw, 2.6rem); margin: 0 0 1rem; }
+    p { max-width: 62ch; margin: 0 0 1rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+    nav a { display: inline-flex; align-items: center; min-height: 44px; }
+    a { color: var(--gold); text-underline-offset: .22em; }
+    a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+    main { display: grid; gap: 1.5rem; }
+    section { background: var(--paper); border: 1px solid var(--rule); padding: clamp(1rem, 4vw, 2rem); }
+    #cartas { border-block-start: 4px double var(--gold); }
+    #cartas, #guia { grid-column: 1 / -1; }
+    .spell-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 1.25rem; }
+    .spell { border: 1px solid var(--rule); background: var(--forest); }
+    .spell a { display: block; }
+    .spell img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: contain; }
+    .spell-copy { padding: 1rem; }
+    .spell h3 { font: 400 1.45rem Georgia, serif; margin: 0 0 .55rem; }
+    .spell-status { color: var(--gold); font-size: .85rem; }
+    section p:last-child { margin-bottom: 0; }
+    footer { color: var(--muted); padding-block: 2rem; font-size: .9rem; }
+    @media (min-width: 52rem) {
+      main { grid-template-columns: 1fr 1.4fr; align-items: start; }
+    }
+    :root { --forest: #241f18; --paper: #332c20; --rule: #685b42; --gold: #f0d49a; }
+    header { padding-block-start: clamp(2rem, 7vw, 4.5rem); }
+    h1 { max-width: 15ch; }
+    .back { display: inline-flex; align-items: center; min-height: 44px; margin-block-end: 1rem; }
+    .deck { grid-column: 1 / -1; scroll-margin-block-start: 1rem; }
+    #paladino { border-block-start: 4px double var(--gold); }
+    .spell-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); }
+    .spell { scroll-margin-block-start: 1rem; }
+    .spell:target { outline: 2px solid var(--gold); outline-offset: 2px; }
+    .spell-status { color: var(--gold); margin: 0 0 .5rem; }
+    .spell h3 { overflow-wrap: anywhere; }
+
+    .original-name { color: var(--muted); font-size: .9rem; margin: 0 0 .7rem; }
+
+    .spell-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); max-width: 42rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back" href="./">← Códice dos Seis</a>
+    <h1>Magias do Laios</h1>
+    <p>Paladino 1 / Bruxo 1 · Humano</p>
+    <nav aria-label="Grupos de magias">
+      <a href="#paladino">Paladino (2)</a>
+      <a href="#bruxo">Bruxo (2)</a>
+      <a href="#truques">Truques conhecidos (2)</a>
+    </nav>
+  </header>
+  <main>
+    <section class="deck" id="paladino" aria-labelledby="titulo-paladino">
+      <h2 id="titulo-paladino">Preparadas de Paladino</h2>
+      <div class="spell-grid">
+        <article class="spell" id="bencao">
+          <a href="./laios-bencao.webp" aria-label="Abrir ilustração de Bênção">
+            <img src="./laios-bencao.webp" width="760" height="1140" loading="lazy" alt="Laios demonstra Bênção">
+          </a>
+          <div class="spell-copy">
+            <p class="spell-status">Preparada · Paladino · 1º círculo · Concentração</p>
+            <h3>Bênção</h3>
+            <p class="original-name" lang="en">Bless</p>
+            <p>Até três criaturas somam 1d4 às jogadas de ataque e às salvaguardas enquanto a bênção durar.</p>
+          </div>
+        </article>
+        <article class="spell" id="curar-ferimentos">
+          <a href="./laios-curar-ferimentos.webp" aria-label="Abrir ilustração de Curar Ferimentos">
+            <img src="./laios-curar-ferimentos.webp" width="760" height="1140" loading="lazy" alt="Laios demonstra Curar Ferimentos">
+          </a>
+          <div class="spell-copy">
+            <p class="spell-status">Preparada · Paladino · 1º círculo</p>
+            <h3>Curar Ferimentos</h3>
+            <p class="original-name" lang="en">Cure Wounds</p>
+            <p>Uma criatura tocada recupera 2d8 + o modificador de Carisma em pontos de vida.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="deck" id="bruxo" aria-labelledby="titulo-bruxo">
+      <h2 id="titulo-bruxo">Preparadas de Bruxo</h2>
+      <div class="spell-grid">
+        <article class="spell" id="maldicao">
+          <a href="./laios-maldicao.webp" aria-label="Abrir ilustração de Maldição">
+            <img src="./laios-maldicao.webp" width="760" height="1140" loading="lazy" alt="Laios demonstra Maldição">
+          </a>
+          <div class="spell-copy">
+            <p class="spell-status">Preparada · Bruxo · 1º círculo · Ação bônus · Concentração</p>
+            <h3>Maldição</h3>
+            <p class="original-name" lang="en">Hex</p>
+            <p>Amaldiçoa uma criatura. Os ataques de Laios que a acertam causam 1d6 extra de dano necrótico. O alvo também tem desvantagem nos testes de atributo que usam o atributo escolhido.</p>
+          </div>
+        </article>
+        <article class="spell" id="armadura-de-agathys">
+          <a href="./laios-armadura-de-agathys.webp" aria-label="Abrir ilustração de Armadura de Agathys">
+            <img src="./laios-armadura-de-agathys.webp" width="760" height="1140" loading="lazy" alt="Laios demonstra Armadura de Agathys">
+          </a>
+          <div class="spell-copy">
+            <p class="spell-status">Preparada · Bruxo · 1º círculo · Ação bônus</p>
+            <h3>Armadura de Agathys</h3>
+            <p class="original-name" lang="en">Armor of Agathys</p>
+            <p>Geada protetora concede 5 pontos de vida temporários. Quem acerta Laios com um ataque corpo a corpo sofre 5 de dano de frio enquanto a magia durar. Ela termina se ele ficar sem pontos de vida temporários.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="deck" id="truques" aria-labelledby="titulo-truques">
+      <h2 id="titulo-truques">Truques conhecidos</h2>
+      <div class="spell-grid">
+        <article class="spell" id="rajada-mistica">
+          <a href="./laios-rajada-mistica.webp" aria-label="Abrir ilustração de Rajada Mística">
+            <img src="./laios-rajada-mistica.webp" width="760" height="1140" loading="lazy" alt="Laios demonstra Rajada Mística">
+          </a>
+          <div class="spell-copy">
+            <p class="spell-status">Truque conhecido · Bruxo</p>
+            <h3>Rajada Mística</h3>
+            <p class="original-name" lang="en">Eldritch Blast</p>
+            <p>Dispara um feixe de energia crepitante que causa 1d10 de dano de força se acertar.</p>
+          </div>
+        </article>
+        <article class="spell" id="lamina-trovejante">
+          <a href="./laios-lamina-trovejante.webp" aria-label="Abrir ilustração de Lâmina Trovejante">
+            <img src="./laios-lamina-trovejante.webp" width="760" height="1140" loading="lazy" alt="Laios demonstra Lâmina Trovejante">
+          </a>
+          <div class="spell-copy">
+            <p class="spell-status">Truque conhecido · Bruxo · Tasha</p>
+            <h3>Lâmina Trovejante</h3>
+            <p class="original-name" lang="en">Booming Blade</p>
+            <p>Faz um ataque com uma arma corpo a corpo que vale pelo menos 1 PP. Se acertar, o alvo sofre o dano normal da arma. Se o alvo se mover voluntariamente pelo menos 1,5 m antes do início do próximo turno de Laios, sofre mais 1d8 de dano trovejante.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Referências oficiais · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Regras de D&amp;D de 2024</a>, <a href="https://www.dndbeyond.com/sources/dnd/phb-2024"><i>Player’s Handbook</i> de 2024</a> e <a href="https://www.dndbeyond.com/sources/dnd/sae/sword-coast-adventurers-guide">texto atualizado de Lâmina Trovejante</a>.</p>
+  </footer>
+</body>
+</html>
