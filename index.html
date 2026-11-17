@@ -34,6 +34,14 @@
     main { display: grid; gap: 1.5rem; }
     section { background: var(--paper); border: 1px solid var(--rule); padding: clamp(1rem, 4vw, 2rem); }
     #cartas { border-block-start: 4px double var(--gold); }
+    #cartas, #guia { grid-column: 1 / -1; }
+    .spell-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 1.25rem; }
+    .spell { border: 1px solid var(--rule); background: var(--forest); }
+    .spell a { display: block; }
+    .spell img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: contain; }
+    .spell-copy { padding: 1rem; }
+    .spell h3 { font: 400 1.45rem Georgia, serif; margin: 0 0 .55rem; }
+    .spell-status { color: var(--gold); font-size: .85rem; }
     section p:last-child { margin-bottom: 0; }
     footer { color: var(--muted); padding-block: 2rem; font-size: .9rem; }
     @media (min-width: 52rem) {
@@ -51,8 +59,117 @@
   </header>
   <main>
     <section id="cartas" aria-labelledby="titulo-cartas">
-      <h2 id="titulo-cartas">Cartas</h2>
-      <p>As cartas revisadas serão publicadas aqui quando estiverem disponíveis.</p>
+      <h2 id="titulo-cartas">Magias da Thalyta</h2>
+      <div class="spell-grid">
+        <article class="spell" id="zombaria-viciosa">
+          <a href="./thalyta-zombaria-viciosa.webp" aria-label="Abrir ilustração de Zombaria Viciosa">
+            <img src="./thalyta-zombaria-viciosa.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Zombaria Viciosa">
+          </a>
+          <div class="spell-copy">
+            <h3>Zombaria Viciosa</h3>
+            <p>Uma provocação encantada desestabiliza um alvo.</p>
+          </div>
+        </article>
+        <article class="spell" id="mensagem">
+          <a href="./thalyta-mensagem.webp" aria-label="Abrir ilustração de Mensagem">
+            <img src="./thalyta-mensagem.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Mensagem">
+          </a>
+          <div class="spell-copy">
+            <h3>Mensagem</h3>
+            <p>Thalyta aponta e sussurra. Só a pessoa escolhida ouve e pode responder em segredo.</p>
+          </div>
+        </article>
+        <article class="spell" id="imagem-silenciosa">
+          <a href="./thalyta-imagem-silenciosa.webp" aria-label="Abrir ilustração de Imagem Silenciosa">
+            <img src="./thalyta-imagem-silenciosa.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Imagem Silenciosa">
+          </a>
+          <div class="spell-copy">
+            <h3>Imagem Silenciosa</h3>
+            <p>Uma parede ilusória ocupa parte de um caminho. A imagem é puramente visual.</p>
+          </div>
+        </article>
+        <article class="spell" id="sussurros-dissonantes">
+          <a href="./thalyta-sussurros-dissonantes.webp" aria-label="Abrir ilustração de Sussurros Dissonantes">
+            <img src="./thalyta-sussurros-dissonantes.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Sussurros Dissonantes">
+          </a>
+          <div class="spell-copy">
+            <h3>Sussurros Dissonantes</h3>
+            <p>Uma melodia ouvida na mente leva o alvo a recuar por uma passagem livre.</p>
+          </div>
+        </article>
+        <article class="spell" id="palavra-curativa">
+          <a href="./thalyta-palavra-curativa.webp" aria-label="Abrir ilustração de Palavra Curativa">
+            <img src="./thalyta-palavra-curativa.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Palavra Curativa">
+          </a>
+          <div class="spell-copy">
+            <h3>Palavra Curativa</h3>
+            <p>Uma palavra revigora uma pessoa que Thalyta vê à distância.</p>
+          </div>
+        </article>
+        <article class="spell" id="comando">
+          <a href="./thalyta-comando.webp" aria-label="Abrir ilustração de Comando">
+            <img src="./thalyta-comando.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Comando">
+          </a>
+          <div class="spell-copy">
+            <h3>Comando</h3>
+            <p>Um alvo larga o objeto que segura após receber uma ordem de uma palavra.</p>
+          </div>
+        </article>
+        <article class="spell" id="rajada-mistica">
+          <a href="./thalyta-rajada-mistica.webp" aria-label="Abrir ilustração de Rajada Mística">
+            <img src="./thalyta-rajada-mistica.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Rajada Mística">
+          </a>
+          <div class="spell-copy">
+            <h3>Rajada Mística</h3>
+            <p>Um único feixe de energia crepitante, como no nível atual da personagem.</p>
+          </div>
+        </article>
+        <article class="spell" id="estilhaco-mental">
+          <a href="./thalyta-estilhaco-mental.webp" aria-label="Abrir ilustração de Estilhaço Mental">
+            <img src="./thalyta-estilhaco-mental.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Estilhaço Mental">
+          </a>
+          <div class="spell-copy">
+            <h3>Estilhaço Mental</h3>
+            <p>Uma perturbação psíquica momentânea atinge a mente de um alvo.</p>
+          </div>
+        </article>
+        <article class="spell" id="armadura-de-agathys">
+          <a href="./thalyta-armadura-de-agathys.webp" aria-label="Abrir ilustração de Armadura de Agathys">
+            <img src="./thalyta-armadura-de-agathys.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Armadura de Agathys">
+          </a>
+          <div class="spell-copy">
+            <h3>Armadura de Agathys</h3>
+            <p>Geada mágica protetora envolve Thalyta e seu traje.</p>
+          </div>
+        </article>
+        <article class="spell" id="enfeiticar-pessoa">
+          <a href="./thalyta-enfeiticar-pessoa.webp" aria-label="Abrir ilustração de Enfeitiçar Pessoa">
+            <img src="./thalyta-enfeiticar-pessoa.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Enfeitiçar Pessoa">
+          </a>
+          <div class="spell-copy">
+            <h3>Enfeitiçar Pessoa</h3>
+            <p>A atitude de uma pessoa muda de cautelosa para amistosa.</p>
+          </div>
+        </article>
+        <article class="spell" id="prestidigitacao">
+          <a href="./thalyta-prestidigitacao.webp" aria-label="Abrir ilustração de Prestidigitação">
+            <img src="./thalyta-prestidigitacao.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Prestidigitação">
+          </a>
+          <div class="spell-copy">
+            <h3>Prestidigitação</h3><p class="spell-status">Truque inicial de linhagem</p>
+            <p>O truque inicial da linhagem limpa um pequeno lenço sujo.</p>
+          </div>
+        </article>
+        <article class="spell" id="ilusao-menor">
+          <a href="./thalyta-ilusao-menor.webp" aria-label="Abrir ilustração de Ilusão Menor">
+            <img src="./thalyta-ilusao-menor.webp" width="760" height="1140" loading="lazy" alt="Thalyta em uma demonstração de Ilusão Menor">
+          </a>
+          <div class="spell-copy">
+            <h3>Ilusão Menor</h3><p class="spell-status">Troca de linhagem planejada</p>
+            <p>Um baú pequeno e imóvel representa a opção visual da troca de truque planejada.</p>
+          </div>
+        </article>
+      </div>
     </section>
     <section id="guia" aria-labelledby="titulo-guia">
       <h2 id="titulo-guia">Observar além da aparência</h2>
