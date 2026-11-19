@@ -1109,6 +1109,89 @@
       "source": "Bruxo ·  Tasha · 2020 e errata oficial"
     }
   ],
+  "guides": {
+    "bestiario/goblins": {
+      "Registro": "Somente as observações descritas nesta carta estão confirmadas.",
+      "Harvesting": "Exige oportunidade real de coleta, acesso, identificação da parte, ferramenta, tempo e segurança; avistamento ou conversa não concedem componentes.",
+      "Táticas": "Capacidades não observadas e decisões do mestre não são publicadas nesta carta."
+    },
+    "bestiario/bugbear": {
+      "Registro": "Somente as observações descritas nesta carta estão confirmadas.",
+      "Harvesting": "Exige oportunidade real de coleta, acesso, identificação da parte, ferramenta, tempo e segurança; avistamento ou conversa não concedem componentes.",
+      "Táticas": "Capacidades não observadas e decisões do mestre não são publicadas nesta carta."
+    },
+    "bestiario/cobra-gigante": {
+      "Registro": "Somente as observações descritas nesta carta estão confirmadas.",
+      "Harvesting": "Exige oportunidade real de coleta, acesso, identificação da parte, ferramenta, tempo e segurança; avistamento ou conversa não concedem componentes.",
+      "Táticas": "Capacidades não observadas e decisões do mestre não são publicadas nesta carta."
+    },
+    "bestiario/manticora": {
+      "Registro": "Somente as observações descritas nesta carta estão confirmadas.",
+      "Harvesting": "Exige oportunidade real de coleta, acesso, identificação da parte, ferramenta, tempo e segurança; avistamento ou conversa não concedem componentes.",
+      "Táticas": "Capacidades não observadas e decisões do mestre não são publicadas nesta carta."
+    },
+    "botanica/herbalismo": {
+      "Uso em campo": "Conferir identificação, parte coletada, condição, lote e custódia antes de usar.",
+      "Propriedades": "Somente efeitos expressamente validados podem ser aplicados; o nome da planta não define uma receita.",
+      "Estoque": "Esta carta não informa quantidade disponível."
+    },
+    "botanica/natureza": {
+      "Uso em campo": "Conferir identificação, parte coletada, condição, lote e custódia antes de usar.",
+      "Propriedades": "Somente efeitos expressamente validados podem ser aplicados; o nome da planta não define uma receita.",
+      "Estoque": "Esta carta não informa quantidade disponível."
+    },
+    "botanica/serenalia": {
+      "Uso em campo": "Conferir identificação, parte coletada, condição, lote e custódia antes de usar.",
+      "Propriedades": "Somente efeitos expressamente validados podem ser aplicados; o nome da planta não define uma receita.",
+      "Estoque": "Esta carta não informa quantidade disponível."
+    },
+    "botanica/mentaria": {
+      "Uso em campo": "Conferir identificação, parte coletada, condição, lote e custódia antes de usar.",
+      "Propriedades": "Somente efeitos expressamente validados podem ser aplicados; o nome da planta não define uma receita.",
+      "Estoque": "Esta carta não informa quantidade disponível."
+    },
+    "botanica/raiz-de-vigor": {
+      "Uso em campo": "Conferir identificação, parte coletada, condição, lote e custódia antes de usar.",
+      "Propriedades": "Somente efeitos expressamente validados podem ser aplicados; o nome da planta não define uma receita.",
+      "Estoque": "Esta carta não informa quantidade disponível."
+    },
+    "culinaria/ensopado": {
+      "Ingredientes por porção": "1 porção de cogumelos identificados como comestíveis + 1 porção de provisões + 1 unidade reconciliada de água por pessoa",
+      "Preparo": "30 minutos; 1–6 porções por lote",
+      "Ferramentas": "Utensílios de cozinheiro; improvisação somente após conferência explícita. Calor e segurança alimentar obrigatórios.",
+      "Efeito": "Alimento comum; não recupera PV, espaços de magia ou recursos de classe.",
+      "Conhecimento registrado": "Referência; aprendizagem ainda não reconciliada",
+      "Origem do contrato": "Contrato original para preparos futuros; não comprova aprendizagem nem reconstrói ingredientes ou despesas de sessões anteriores."
+    },
+    "culinaria/espetinhos": {
+      "Ingredientes por porção": "1 porção reconciliada de carne de besta, identificada e segura, por pessoa",
+      "Preparo": "30 minutos; 1–6 porções por lote",
+      "Ferramentas": "Utensílios de cozinheiro; improvisação somente após conferência explícita. Calor e segurança alimentar obrigatórios.",
+      "Efeito": "Alimento comum; não recupera PV, espaços de magia ou recursos de classe.",
+      "Conhecimento registrado": "Referência; aprendizagem ainda não reconciliada",
+      "Origem do contrato": "Contrato original para preparos futuros; não comprova aprendizagem nem reconstrói ingredientes ou despesas de sessões anteriores."
+    },
+    "culinaria/caldo": {
+      "Ingredientes por porção": "1 porção de provisões + 1 unidade reconciliada de água por pessoa",
+      "Preparo": "20 minutos; 1–6 porções por lote",
+      "Ferramentas": "Utensílios de cozinheiro; improvisação somente após conferência explícita. Calor e segurança alimentar obrigatórios.",
+      "Efeito": "Alimento comum; não recupera PV, espaços de magia ou recursos de classe.",
+      "Conhecimento registrado": "Referência; aprendizagem ainda não reconciliada",
+      "Origem do contrato": "Contrato original para preparos futuros; não comprova aprendizagem nem reconstrói ingredientes ou despesas de sessões anteriores."
+    },
+    "alquimia/kit-curandeiro": {
+      "Produção": "Exige fórmula conhecida, ferramentas acessíveis, materiais e tempo comprovados. Referência de equipamento não é uma poção pronta."
+    },
+    "alquimia/kit-herbalismo": {
+      "Produção": "Exige fórmula conhecida, ferramentas acessíveis, materiais e tempo comprovados. Referência de equipamento não é uma poção pronta."
+    }
+  },
+  "spell_stage_definitions": {
+    "encontrada": "Fonte acessível registrada; não equivale a aprender a magia.",
+    "copiada": "Cópia concluída com custos e tempo confirmados.",
+    "adaptada": "Adaptação concluída por procedimento auditado.",
+    "preparada": "Seleção atual confirmada na ficha; não implica conjuração."
+  },
   "note_sync": false,
   "inventory_authority": false
 }
