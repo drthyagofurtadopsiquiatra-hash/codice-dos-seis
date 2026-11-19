@@ -1,0 +1,1114 @@
+{
+  "schema_version": 1,
+  "profile_id": "phandelver-integrada-2026-02",
+  "revision": 25,
+  "collections": {
+    "alquimia": [
+      {
+        "key": "alquimia/kit-curandeiro",
+        "collection": "alquimia",
+        "title": "Kit de Curandeiro",
+        "description": "Kit de Curandeiro aparece na referência de equipamento da ficha de Marcelli. A carta não confirma usos restantes, estoque ou acesso atual; conferir o registro da campanha antes de usar.",
+        "stage": "referência pública",
+        "image": "colecao-oficios.webp",
+        "alt": "Ilustração editorial de estudo e ferramentas; não identifica uma espécie de planta"
+      },
+      {
+        "key": "alquimia/kit-herbalismo",
+        "collection": "alquimia",
+        "title": "Kit de Herbalismo",
+        "description": "Kit de Herbalismo aparece na referência de equipamento da ficha de Marcelli. A carta não confirma usos restantes, estoque ou acesso atual; conferir o registro da campanha antes de usar.",
+        "stage": "referência pública",
+        "image": "colecao-oficios.webp",
+        "alt": "Ilustração editorial de estudo e ferramentas; não identifica uma espécie de planta"
+      }
+    ],
+    "bestiario": [
+      {
+        "key": "bestiario/goblins",
+        "collection": "bestiario",
+        "title": "Goblins Cragmaw",
+        "description": "Goblins Cragmaw foram vistos pelo grupo na caverna Cragmaw. Registro confirmado pelo jogador; capacidades não observadas permanecem fora desta carta.",
+        "stage": "avistado",
+        "image": "colecao-goblin.webp",
+        "alt": "Ilustração interpretativa de Goblins Cragmaw"
+      },
+      {
+        "key": "bestiario/bugbear",
+        "collection": "bestiario",
+        "title": "Bugbear",
+        "description": "Bugbear foi visto pelo grupo na caverna Cragmaw. A carta registra o encontro, sem revelar estatísticas ou atribuir uma coleta de partes.",
+        "stage": "avistado",
+        "image": "colecao-bugbear.webp",
+        "alt": "Ilustração interpretativa de Bugbear"
+      },
+      {
+        "key": "bestiario/cobra-gigante",
+        "collection": "bestiario",
+        "title": "Cobra gigante de Cragmaw",
+        "description": "Cobra gigante de Cragmaw foi vista pelo grupo na caverna Cragmaw. O jogador confirmou que é a criatura presente nessa caverna na aventura. Não há estoque de partes ou substâncias confirmado por esta carta.",
+        "stage": "avistado",
+        "image": "colecao-cobra.webp",
+        "alt": "Ilustração interpretativa de Cobra gigante de Cragmaw"
+      },
+      {
+        "key": "bestiario/manticora",
+        "collection": "bestiario",
+        "title": "Mantícora",
+        "description": "Mantícora foi vista pelo grupo, que conversou com ela. A interação foi confirmada pelo jogador. Conversar não comprova conhecer todas as capacidades da espécie nem disponibiliza um corpo para coleta.",
+        "stage": "observado",
+        "image": "colecao-manticora.webp",
+        "alt": "Ilustração interpretativa de Mantícora"
+      }
+    ],
+    "botanica": [
+      {
+        "key": "botanica/herbalismo",
+        "collection": "botanica",
+        "title": "Herbalismo de Marcelli",
+        "description": "Herbalismo de Marcelli consta como proficiência na ficha. Posse, acesso a ferramentas e estoques atuais precisam ser conferidos antes de um preparo.",
+        "stage": "referência pública",
+        "image": "colecao-oficios.webp",
+        "alt": "Ilustração editorial de estudo e ferramentas; não identifica uma espécie de planta"
+      },
+      {
+        "key": "botanica/natureza",
+        "collection": "botanica",
+        "title": "Natureza de Senshi",
+        "description": "Natureza de Senshi consta como proficiência na ficha. Isso permite propor estudos, mas não identifica automaticamente plantas nem garante segurança alimentar.",
+        "stage": "referência pública",
+        "image": "colecao-oficios.webp",
+        "alt": "Ilustração editorial de estudo e ferramentas; não identifica uma espécie de planta"
+      },
+      {
+        "key": "botanica/serenalia",
+        "collection": "botanica",
+        "title": "Serenália",
+        "description": "Serenália aparece no histórico de colheita da sessão. Quantidade atual, custódia, conservação e propriedades não estão integralmente reconciliadas. O nome usado na sessão não confirma espécie botânica real ou efeito mágico.",
+        "stage": "registro histórico",
+        "image": "colecao-oficios.webp",
+        "alt": "Ilustração editorial de estudo e ferramentas; não identifica uma espécie de planta"
+      },
+      {
+        "key": "botanica/mentaria",
+        "collection": "botanica",
+        "title": "Mentária-das-colinas",
+        "description": "Mentária-das-colinas aparece no histórico de colheita da sessão. Quantidade atual, custódia, conservação e propriedades não estão integralmente reconciliadas. O nome usado na sessão não confirma espécie botânica real ou efeito mágico.",
+        "stage": "registro histórico",
+        "image": "colecao-oficios.webp",
+        "alt": "Ilustração editorial de estudo e ferramentas; não identifica uma espécie de planta"
+      },
+      {
+        "key": "botanica/raiz-de-vigor",
+        "collection": "botanica",
+        "title": "Raiz-de-vigor",
+        "description": "Raiz-de-vigor aparece no histórico de colheita da sessão. Quantidade atual, custódia, conservação e propriedades não estão integralmente reconciliadas. O nome usado na sessão não confirma espécie botânica real ou efeito mágico.",
+        "stage": "registro histórico",
+        "image": "colecao-oficios.webp",
+        "alt": "Ilustração editorial de estudo e ferramentas; não identifica uma espécie de planta"
+      }
+    ],
+    "culinaria": [
+      {
+        "key": "culinaria/ensopado",
+        "collection": "culinaria",
+        "title": "Ensopado de Cogumelos da Caverna",
+        "description": "Ensopado de Cogumelos da Caverna é uma receita comum já presente no Códice público. Usar somente cogumelos identificados como adequados ao consumo. Esta publicação não adiciona ingredientes ou porções ao inventário.",
+        "stage": "referência pública",
+        "image": "receita-ensopado.webp",
+        "alt": "Ilustração editorial de comida comum"
+      },
+      {
+        "key": "culinaria/espetinhos",
+        "collection": "culinaria",
+        "title": "Espetinhos do Explorador",
+        "description": "Espetinhos do Explorador é uma receita comum de viagem já presente no Códice público. Ingredientes, utensílios e tempo precisam ser conferidos antes do preparo. Esta publicação não adiciona ingredientes ou porções ao inventário.",
+        "stage": "referência pública",
+        "image": "receita-espetinhos.webp",
+        "alt": "Ilustração editorial de comida comum"
+      },
+      {
+        "key": "culinaria/caldo",
+        "collection": "culinaria",
+        "title": "Caldo Revigorante do Viajante",
+        "description": "Caldo Revigorante do Viajante é uma receita comum já presente no Códice público. O nome não concede cura de pontos de vida ou outro efeito mágico. Esta publicação não adiciona ingredientes ou porções ao inventário.",
+        "stage": "referência pública",
+        "image": "receita-caldo.webp",
+        "alt": "Ilustração editorial de comida comum"
+      }
+    ],
+    "grimorio": []
+  },
+  "spell_cards": [
+    "thyago-sono",
+    "thyago-escudo",
+    "thyago-farpas-prateadas",
+    "thyago-graxa",
+    "thyago-explosao-feiticeira",
+    "thyago-estilhaco-mental",
+    "thyago-mao-magica",
+    "thyago-ilusao-menor",
+    "thalyta-zombaria-viciosa",
+    "thalyta-mensagem",
+    "thalyta-imagem-silenciosa",
+    "thalyta-sussurros-dissonantes",
+    "thalyta-palavra-curativa",
+    "thalyta-comando",
+    "thalyta-rajada-mistica",
+    "thalyta-estilhaco-mental",
+    "thalyta-armadura-de-agathys",
+    "thalyta-enfeiticar-pessoa",
+    "thalyta-prestidigitacao",
+    "thalyta-ilusao-menor",
+    "mercile-bencao",
+    "mercile-curar-ferimentos",
+    "mercile-detectar-venenos-e-doencas",
+    "mercile-palavra-curativa",
+    "mercile-santuario",
+    "mercile-perdicao",
+    "mercile-comando",
+    "mercile-criar-ou-destruir-agua",
+    "mercile-detectar-bem-e-mal",
+    "mercile-detectar-magia",
+    "mercile-raio-guiador",
+    "mercile-infligir-ferimentos",
+    "mercile-protecao-contra-o-bem-e-o-mal",
+    "mercile-purificar-alimentos-e-bebidas",
+    "mercile-escudo-da-fe",
+    "mercile-orientacao",
+    "mercile-chama-sagrada",
+    "mercile-sino-dos-mortos",
+    "mercile-taumaturgia",
+    "mercile-prestidigitacao",
+    "laios-bencao",
+    "laios-curar-ferimentos",
+    "laios-maldicao",
+    "laios-armadura-de-agathys",
+    "laios-rajada-mistica",
+    "laios-lamina-trovejante"
+  ],
+  "spells": [
+    {
+      "id": "thyago-sono",
+      "title": "Sono",
+      "collection": "thyago",
+      "status": "Preparada",
+      "image": "thyago-classico-sono.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V · S · M — pitada de areia ou pétalas de rosa",
+        "Duração": "Até 1 minuto",
+        "Concentração": "Sim",
+        "Ritual": "Não"
+      },
+      "description": "Entorpece e pode adormecer alvos escolhidos.",
+      "mechanics": "Esfera de 1,5 m de raio. Salvaguarda de Sabedoria ao conjurar e, para quem falhou, no fim do próximo turno do alvo. A primeira falha deixa Incapacitado e a segunda, Inconsciente. Dano ou uma ação para sacudir o alvo a até 1,5 m encerra o efeito nele. Criaturas que não dormem ou imunes à Exaustão passam automaticamente.",
+      "source": "Feiticeiro ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thyago-escudo",
+      "title": "Escudo",
+      "collection": "thyago",
+      "status": "Preparada",
+      "image": "thyago-classico-escudo.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Abjuração",
+        "Conjuração": "Reação",
+        "Alcance": "Pessoal",
+        "Componentes": "V · S",
+        "Duração": "1 rodada",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Uma barreira de força imperceptível protege o conjurador.",
+      "mechanics": "Reação ao ser atingido por um ataque ou virar alvo de Mísseis Mágicos. +5 de CA até o início do seu próximo turno, inclusive contra o ataque desencadeador. Impede dano de Mísseis Mágicos.",
+      "source": "Feiticeiro ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thyago-farpas-prateadas",
+      "title": "Farpas Prateadas",
+      "collection": "thyago",
+      "status": "Preparada",
+      "image": "thyago-classico-farpas-prateadas.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Encantamento",
+        "Conjuração": "Reação",
+        "Alcance": "18 m",
+        "Componentes": "V",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Perturba o sucesso de uma criatura e encoraja outra.",
+      "mechanics": "Reação quando uma criatura visível a até 18 m tem sucesso num ataque, teste de atributo ou salvaguarda. Ela repete o d20 e usa o menor. Uma criatura diferente que você vê no alcance, inclusive você, tem vantagem na próxima dessas jogadas em até 1 minuto. O benefício não se acumula.",
+      "source": "Feiticeiro ·  Strixhaven · 2021"
+    },
+    {
+      "id": "thyago-graxa",
+      "title": "Graxa",
+      "collection": "thyago",
+      "status": "Preparada",
+      "image": "thyago-classico-graxa.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Conjuração",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V · S · M — toucinho com pele ou manteiga",
+        "Duração": "1 minuto",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Torna uma parte do chão escorregadia.",
+      "mechanics": "Quadrado de 3 m de lado de graxa não inflamável e terreno difícil. Salvaguarda de Destreza ao surgir sob a criatura, ao entrar na área ou ao terminar o turno nela. Falha deixa Caído.",
+      "source": "Feiticeiro ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thyago-explosao-feiticeira",
+      "title": "Explosão Feiticeira",
+      "collection": "thyago",
+      "status": "Truque conhecido",
+      "image": "thyago-classico-explosao-feiticeira.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Evocação",
+        "Conjuração": "Ação",
+        "Alcance": "36 m",
+        "Componentes": "V · S",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Projeta energia feiticeira de um tipo escolhido.",
+      "mechanics": "Ataque mágico à distância contra uma criatura ou objeto. 1d8 de ácido, frio, fogo, elétrico, veneno, psíquico ou trovejante. Cada 8 permite outro d8, até um total de dados extras igual ao modificador de conjuração. O dano-base passa a 2d8/3d8/4d8 nos níveis 5/11/17. A arte estiliza diferentes tipos de energia. Escolha um tipo por conjuração.",
+      "source": "Feiticeiro ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thyago-estilhaco-mental",
+      "title": "Estilhaço Mental",
+      "collection": "thyago",
+      "status": "Truque conhecido",
+      "image": "thyago-classico-estilhaco-mental.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V",
+        "Duração": "1 rodada",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Desorienta uma criatura com uma intrusão psíquica.",
+      "mechanics": "Salvaguarda de Inteligência. Falha causa 1d6 psíquico e impõe −1d4 à próxima salvaguarda do alvo até o fim do seu próximo turno. Dano de 2d6/3d6/4d6 nos níveis 5/11/17.",
+      "source": "Feiticeiro ·  Player’s Handbook · 2024"
+    },
+    {
+      "id": "thyago-mao-magica",
+      "title": "Mão Mágica",
+      "collection": "thyago",
+      "status": "Truque conhecido",
+      "image": "thyago-classico-mao-magica.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Conjuração",
+        "Conjuração": "Ação",
+        "Alcance": "9 m",
+        "Componentes": "V · S",
+        "Duração": "1 minuto",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Uma mão espectral manipula objetos leves à distância.",
+      "mechanics": "Pode abrir recipientes ou portas destrancadas e manipular, retirar ou guardar objetos. Nas rodadas seguintes, uma ação de Magia volta a controlá-la e pode movê-la até 9 m. A mão não ataca, não ativa itens mágicos e carrega até 4,5 kg.",
+      "source": "Feiticeiro ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thyago-ilusao-menor",
+      "title": "Ilusão Menor",
+      "collection": "thyago",
+      "status": "Truque conhecido",
+      "image": "thyago-classico-ilusao-menor.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Ilusão",
+        "Conjuração": "Ação",
+        "Alcance": "9 m",
+        "Componentes": "S · M — um pouco de lã",
+        "Duração": "1 minuto",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Cria um som ou a imagem de um objeto.",
+      "mechanics": "Imagem de um objeto em cubo de até 1,5 m de lado, sem luz, som ou cheiro. O toque revela a ilusão. Uma ação de Estudar permite identificá-la com Investigação contra a CD de magia.",
+      "source": "Feiticeiro ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thalyta-zombaria-viciosa",
+      "title": "Zombaria Viciosa",
+      "collection": "thalyta",
+      "status": "Truque conhecido",
+      "image": "thalyta-zombaria-viciosa.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Uma provocação encantada abala o alvo.",
+      "mechanics": "Uma criatura que você vê ou ouve faz uma salvaguarda de Sabedoria. Falha causa 1d6 psíquico e desvantagem na próxima jogada de ataque até o fim do próximo turno do alvo. Dano de 2d6/3d6/4d6 nos níveis 5/11/17.",
+      "source": "Barda ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thalyta-mensagem",
+      "title": "Mensagem",
+      "collection": "thalyta",
+      "status": "Truque conhecido",
+      "image": "thalyta-mensagem.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Transmutação",
+        "Conjuração": "Ação",
+        "Alcance": "36 m",
+        "Componentes": "S · M — fio de cobre",
+        "Duração": "1 rodada",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Envia um sussurro que apenas o destinatário ouve.",
+      "mechanics": "Aponte para uma criatura no alcance. Só ela ouve e pode responder de modo que só você escute. Silêncio mágico e certas barreiras bloqueiam a transmissão.",
+      "source": "Barda ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thalyta-imagem-silenciosa",
+      "title": "Imagem Silenciosa",
+      "collection": "thalyta",
+      "status": "Magia de 1º círculo",
+      "image": "thalyta-imagem-silenciosa.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Ilusão",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V · S · M — um pouco de lã",
+        "Duração": "Até 10 minutos",
+        "Concentração": "Sim",
+        "Ritual": "Não"
+      },
+      "description": "Cria uma imagem ilusória puramente visual.",
+      "mechanics": "Objeto, criatura ou outro fenômeno visível em cubo de até 4,5 m de lado. Uma ação de Magia pode mover a imagem dentro do alcance. O toque a denuncia. Uma ação de Estudar permite identificá-la com Investigação contra a CD de magia.",
+      "source": "Barda · também disponível por Visões Nebulosas conforme a ficha ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thalyta-sussurros-dissonantes",
+      "title": "Sussurros Dissonantes",
+      "collection": "thalyta",
+      "status": "Magia de 1º círculo",
+      "image": "thalyta-sussurros-dissonantes.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Uma melodia dissonante irrompe na mente do alvo.",
+      "mechanics": "Salvaguarda de Sabedoria. Falha causa 3d6 psíquico e o alvo usa a reação, se disponível, para se afastar pela rota mais segura. Sucesso causa metade do dano, sem movimento. Soma 1d6 por círculo acima do primeiro.",
+      "source": "Barda ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thalyta-palavra-curativa",
+      "title": "Palavra Curativa",
+      "collection": "thalyta",
+      "status": "Magia de 1º círculo",
+      "image": "thalyta-palavra-curativa.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Abjuração",
+        "Conjuração": "Ação bônus",
+        "Alcance": "18 m",
+        "Componentes": "V",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Revigora uma criatura visível à distância.",
+      "mechanics": "Restaura 2d4 + modificador de Carisma em PV. Soma 2d4 por círculo acima do primeiro.",
+      "source": "Barda ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thalyta-comando",
+      "title": "Comando",
+      "collection": "thalyta",
+      "status": "Magia de 1º círculo",
+      "image": "thalyta-comando.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Impõe uma ordem breve a uma criatura.",
+      "mechanics": "Salvaguarda de Sabedoria. Em falha, o alvo obedece no próximo turno. Opções da regra: aproximar-se, largar, fugir, prostrar-se ou parar. Acrescenta um alvo por círculo acima do primeiro.",
+      "source": "Barda ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thalyta-rajada-mistica",
+      "title": "Rajada Mística",
+      "collection": "thalyta",
+      "status": "Truque conhecido",
+      "image": "thalyta-rajada-mistica.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Evocação",
+        "Conjuração": "Ação",
+        "Alcance": "36 m",
+        "Componentes": "V · S",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Dispara um feixe crepitante de força.",
+      "mechanics": "Ataque mágico à distância contra uma criatura ou objeto. Acerto causa 1d10 de força. São 2/3/4 feixes nos níveis 5/11/17, com ataques separados.",
+      "source": "Bruxa ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thalyta-estilhaco-mental",
+      "title": "Estilhaço Mental",
+      "collection": "thalyta",
+      "status": "Truque conhecido",
+      "image": "thalyta-estilhaco-mental.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V",
+        "Duração": "1 rodada",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Desorienta uma criatura com uma intrusão psíquica.",
+      "mechanics": "Salvaguarda de Inteligência. Falha causa 1d6 psíquico e impõe −1d4 à próxima salvaguarda do alvo até o fim do seu próximo turno. Dano de 2d6/3d6/4d6 nos níveis 5/11/17.",
+      "source": "Bruxa ·  Player’s Handbook · 2024"
+    },
+    {
+      "id": "thalyta-armadura-de-agathys",
+      "title": "Armadura de Agathys",
+      "collection": "thalyta",
+      "status": "Magia de 1º círculo",
+      "image": "thalyta-armadura-de-agathys.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Abjuração",
+        "Conjuração": "Ação bônus",
+        "Alcance": "Pessoal",
+        "Componentes": "V · S · M — fragmento de vidro azul",
+        "Duração": "1 hora",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Geada mágica protetora envolve o conjurador.",
+      "mechanics": "Concede 5 PV temporários e causa 5 de frio a quem acertar você em um ataque corpo a corpo. Termina se ficar sem PV temporários. Ambos os valores aumentam em 5 por círculo acima do primeiro.",
+      "source": "Bruxa ·  Player’s Handbook · 2024"
+    },
+    {
+      "id": "thalyta-enfeiticar-pessoa",
+      "title": "Enfeitiçar Pessoa",
+      "collection": "thalyta",
+      "status": "Magia de 1º círculo",
+      "image": "thalyta-enfeiticar-pessoa.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "9 m",
+        "Componentes": "V · S",
+        "Duração": "1 hora",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Torna um humanoide amistoso ao conjurador.",
+      "mechanics": "Salvaguarda de Sabedoria, com vantagem se você ou aliados estiverem combatendo o alvo. Em falha, fica Enfeitiçado e amistoso. O efeito termina se você ou aliados lhe causarem dano. Ao terminar, o alvo sabe que foi enfeitiçado.",
+      "source": "Bruxa ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thalyta-prestidigitacao",
+      "title": "Prestidigitação",
+      "collection": "thalyta",
+      "status": "Truque inicial de linhagem",
+      "image": "thalyta-prestidigitacao.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Transmutação",
+        "Conjuração": "Ação",
+        "Alcance": "3 m",
+        "Componentes": "V · S",
+        "Duração": "Até 1 hora",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Produz um pequeno efeito mágico cotidiano.",
+      "mechanics": "Escolha um efeito sensorial, fogo menor, limpeza ou sujeira, temperatura ou sabor, marca ou pequena criação temporária. Até três efeitos não instantâneos podem coexistir.",
+      "source": "Linhagem Alta Elfa · truque inicial ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "thalyta-ilusao-menor",
+      "title": "Ilusão Menor",
+      "collection": "thalyta",
+      "status": "Troca de linhagem planejada",
+      "image": "thalyta-ilusao-menor.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Ilusão",
+        "Conjuração": "Ação",
+        "Alcance": "9 m",
+        "Componentes": "S · M — um pouco de lã",
+        "Duração": "1 minuto",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Cria um som ou a imagem de um objeto.",
+      "mechanics": "Imagem de um objeto em cubo de até 1,5 m de lado, sem luz, som ou cheiro. O toque revela a ilusão. Uma ação de Estudar permite identificá-la com Investigação contra a CD de magia.",
+      "source": "Linhagem Alta Elfa · troca planejada ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-bencao",
+      "title": "Bênção",
+      "collection": "mercile",
+      "status": "Preparada",
+      "image": "mercile-bencao.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "9 m",
+        "Componentes": "V · S · M — símbolo sagrado de pelo menos 5 PO",
+        "Duração": "Até 1 minuto",
+        "Concentração": "Sim",
+        "Ritual": "Não"
+      },
+      "description": "Abençoa até três criaturas ao alcance.",
+      "mechanics": "Cada alvo soma 1d4 às jogadas de ataque e salvaguardas enquanto durar a concentração. Acrescenta um alvo por círculo acima do primeiro.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-curar-ferimentos",
+      "title": "Curar Ferimentos",
+      "collection": "mercile",
+      "status": "Preparada",
+      "image": "mercile-curar-ferimentos.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Abjuração",
+        "Conjuração": "Ação",
+        "Alcance": "Toque",
+        "Componentes": "V · S",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Restaura pontos de vida pelo toque.",
+      "mechanics": "Restaura 2d8 + modificador de Sabedoria em PV. Soma 2d8 por círculo acima do primeiro.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-detectar-venenos-e-doencas",
+      "title": "Detectar Venenos e Doenças",
+      "collection": "mercile",
+      "status": "Preparada",
+      "image": "mercile-detectar-venenos-e-doencas.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Adivinhação",
+        "Conjuração": "Ação ou ritual",
+        "Alcance": "Pessoal",
+        "Componentes": "V · S · M — folha de teixo",
+        "Duração": "Até 10 minutos",
+        "Concentração": "Sim",
+        "Ritual": "Sim"
+      },
+      "description": "Percebe venenos e contágios mágicos próximos.",
+      "mechanics": "Detecta a posição e o tipo de veneno, criatura venenosa ou peçonhenta ou contágio mágico em até 9 m. Espessuras suficientes de pedra, terra, madeira, metal ou uma folha de chumbo bloqueiam a percepção.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-palavra-curativa",
+      "title": "Palavra Curativa",
+      "collection": "mercile",
+      "status": "Preparada",
+      "image": "mercile-palavra-curativa.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Abjuração",
+        "Conjuração": "Ação bônus",
+        "Alcance": "18 m",
+        "Componentes": "V",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Revigora uma criatura visível à distância.",
+      "mechanics": "Restaura 2d4 + modificador de Sabedoria em PV. Soma 2d4 por círculo acima do primeiro.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-santuario",
+      "title": "Santuário",
+      "collection": "mercile",
+      "status": "Preparada",
+      "image": "mercile-santuario.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Abjuração",
+        "Conjuração": "Ação bônus",
+        "Alcance": "9 m",
+        "Componentes": "V · S · M — fragmento de espelho",
+        "Duração": "1 minuto",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Protege uma criatura contra tentativas de ataque direcionadas.",
+      "mechanics": "Quem tenta atingi-la com ataque ou magia de dano faz salvaguarda de Sabedoria. Em falha, escolhe outro alvo ou perde a tentativa. Efeitos de área seguem normalmente. Termina se a criatura protegida atacar, conjurar ou causar dano.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-perdicao",
+      "title": "Perdição",
+      "collection": "mercile",
+      "status": "Disponível para preparar",
+      "image": "mercile-perdicao.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "9 m",
+        "Componentes": "V · S · M — gota de sangue",
+        "Duração": "Até 1 minuto",
+        "Concentração": "Sim",
+        "Ritual": "Não"
+      },
+      "description": "Enfraquece as jogadas de até três criaturas.",
+      "mechanics": "Salvaguarda de Carisma. Quem falha subtrai 1d4 de ataques e salvaguardas enquanto durar a concentração. Acrescenta um alvo por círculo acima do primeiro.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-comando",
+      "title": "Comando",
+      "collection": "mercile",
+      "status": "Disponível para preparar",
+      "image": "mercile-comando.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Impõe uma ordem breve a uma criatura.",
+      "mechanics": "Salvaguarda de Sabedoria. Em falha, o alvo obedece no próximo turno. Opções da regra: aproximar-se, largar, fugir, prostrar-se ou parar. Acrescenta um alvo por círculo acima do primeiro.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-criar-ou-destruir-agua",
+      "title": "Criar ou Destruir Água",
+      "collection": "mercile",
+      "status": "Disponível para preparar",
+      "image": "mercile-criar-ou-destruir-agua.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Transmutação",
+        "Conjuração": "Ação",
+        "Alcance": "9 m",
+        "Componentes": "V · S · M — mistura de água e areia",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Cria água limpa ou retira água de uma área.",
+      "mechanics": "Cria até 38 L em recipiente aberto ou chuva num cubo de 9 m de lado. Pode destruir até 38 L em recipiente aberto ou dissipar neblina num cubo de 9 m de lado.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-detectar-bem-e-mal",
+      "title": "Detectar Bem e Mal",
+      "collection": "mercile",
+      "status": "Disponível para preparar",
+      "image": "mercile-detectar-bem-e-mal.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Adivinhação",
+        "Conjuração": "Ação",
+        "Alcance": "Pessoal",
+        "Componentes": "V · S",
+        "Duração": "Até 10 minutos",
+        "Concentração": "Sim",
+        "Ritual": "Não"
+      },
+      "description": "Percebe certos tipos sobrenaturais e áreas consagradas.",
+      "mechanics": "Localiza aberrações, celestiais, elementais, fadas, ínferos, mortos-vivos e efeitos de Consagrar em até 9 m. Certas barreiras bloqueiam a percepção.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-detectar-magia",
+      "title": "Detectar Magia",
+      "collection": "mercile",
+      "status": "Disponível para preparar",
+      "image": "mercile-detectar-magia.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Adivinhação",
+        "Conjuração": "Ação ou ritual",
+        "Alcance": "Pessoal",
+        "Componentes": "V · S",
+        "Duração": "Até 10 minutos",
+        "Concentração": "Sim",
+        "Ritual": "Sim"
+      },
+      "description": "Percebe efeitos mágicos nas proximidades.",
+      "mechanics": "Percebe magia em até 9 m. Uma ação de Magia revela aura fraca em criatura ou objeto visível que porta o efeito e, se ele veio de uma magia, sua escola. Certas barreiras bloqueiam a percepção.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-raio-guiador",
+      "title": "Raio Guiador",
+      "collection": "mercile",
+      "status": "Disponível para preparar",
+      "image": "mercile-raio-guiador.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Evocação",
+        "Conjuração": "Ação",
+        "Alcance": "36 m",
+        "Componentes": "V · S",
+        "Duração": "1 rodada",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Um raio radiante marca o alvo com luz.",
+      "mechanics": "Ataque mágico à distância. Acerto causa 4d6 radiante. A próxima jogada de ataque contra esse alvo antes do fim do seu próximo turno tem vantagem. Soma 1d6 por círculo acima do primeiro.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-infligir-ferimentos",
+      "title": "Infligir Ferimentos",
+      "collection": "mercile",
+      "status": "Disponível para preparar",
+      "image": "mercile-infligir-ferimentos.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Necromancia",
+        "Conjuração": "Ação",
+        "Alcance": "Toque",
+        "Componentes": "V · S",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Causa dano necrótico pelo toque.",
+      "mechanics": "Salvaguarda de Constituição. Falha causa 2d10 necrótico e sucesso, metade. Soma 1d10 por círculo acima do primeiro.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-protecao-contra-o-bem-e-o-mal",
+      "title": "Proteção Contra o Bem e o Mal",
+      "collection": "mercile",
+      "status": "Disponível para preparar",
+      "image": "mercile-protecao-contra-o-bem-e-o-mal.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Abjuração",
+        "Conjuração": "Ação",
+        "Alcance": "Toque",
+        "Componentes": "V · S · M — água benta de pelo menos 25 PO, consumida",
+        "Duração": "Até 10 minutos",
+        "Concentração": "Sim",
+        "Ritual": "Não"
+      },
+      "description": "Resguarda uma criatura disposta contra certos seres sobrenaturais.",
+      "mechanics": "Aberrações, celestiais, elementais, fadas, ínferos e mortos-vivos têm desvantagem para atacar o alvo. Esses seres também não podem possuí-lo, Enfeitiçá-lo ou Amedrontá-lo. Se já estiver sob um desses efeitos, tem vantagem em novas salvaguardas contra ele.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-purificar-alimentos-e-bebidas",
+      "title": "Purificar Alimentos e Bebidas",
+      "collection": "mercile",
+      "status": "Disponível para preparar",
+      "image": "mercile-purificar-alimentos-e-bebidas.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Transmutação",
+        "Conjuração": "Ação ou ritual",
+        "Alcance": "3 m",
+        "Componentes": "V · S",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Sim"
+      },
+      "description": "Purifica comida e bebida não mágicas.",
+      "mechanics": "Remove veneno e deterioração de alimentos e bebidas numa esfera de 1,5 m de raio.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-escudo-da-fe",
+      "title": "Escudo da Fé",
+      "collection": "mercile",
+      "status": "Disponível para preparar",
+      "image": "mercile-escudo-da-fe.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Abjuração",
+        "Conjuração": "Ação bônus",
+        "Alcance": "18 m",
+        "Componentes": "V · S · M — pergaminho com uma prece",
+        "Duração": "Até 10 minutos",
+        "Concentração": "Sim",
+        "Ritual": "Não"
+      },
+      "description": "Cria um campo protetor cintilante em torno de uma criatura.",
+      "mechanics": "A criatura escolhida recebe +2 de CA enquanto durar a concentração.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-orientacao",
+      "title": "Orientação",
+      "collection": "mercile",
+      "status": "Truque conhecido",
+      "image": "mercile-orientacao.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Adivinhação",
+        "Conjuração": "Ação",
+        "Alcance": "Toque",
+        "Componentes": "V · S",
+        "Duração": "Até 1 minuto",
+        "Concentração": "Sim",
+        "Ritual": "Não"
+      },
+      "description": "Auxilia uma criatura disposta em uma perícia escolhida.",
+      "mechanics": "A criatura tocada soma 1d4 a cada teste com a perícia escolhida enquanto durar a concentração.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-chama-sagrada",
+      "title": "Chama Sagrada",
+      "collection": "mercile",
+      "status": "Truque conhecido",
+      "image": "mercile-chama-sagrada.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Evocação",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V · S",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Faz descer luminosidade em forma de chama.",
+      "mechanics": "Salvaguarda de Destreza ou 1d8 radiante. Meia cobertura e cobertura de três quartos não beneficiam o alvo nessa salvaguarda. Dano de 2d8/3d8/4d8 nos níveis 5/11/17.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-sino-dos-mortos",
+      "title": "Sino dos Mortos",
+      "collection": "mercile",
+      "status": "Truque conhecido",
+      "image": "mercile-sino-dos-mortos.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Necromancia",
+        "Conjuração": "Ação",
+        "Alcance": "18 m",
+        "Componentes": "V · S",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Uma badalada fúnebre soa perto da criatura escolhida.",
+      "mechanics": "Salvaguarda de Sabedoria. Falha causa 1d8 necrótico ou 1d12 se o alvo já perdeu PV. Acrescenta um dado nos níveis 5, 11 e 17.",
+      "source": "Clériga ·  Player’s Handbook · 2024"
+    },
+    {
+      "id": "mercile-taumaturgia",
+      "title": "Taumaturgia",
+      "collection": "mercile",
+      "status": "Truque conhecido",
+      "image": "mercile-taumaturgia.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Transmutação",
+        "Conjuração": "Ação",
+        "Alcance": "9 m",
+        "Componentes": "V",
+        "Duração": "Até 1 minuto",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Manifesta um pequeno prodígio.",
+      "mechanics": "Escolha alterar os olhos, amplificar a voz, mudar chamas, abrir ou fechar algo destrancado, produzir som fantasma ou fazer o chão tremer. Até três efeitos de 1 minuto podem coexistir.",
+      "source": "Clériga ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "mercile-prestidigitacao",
+      "title": "Prestidigitação",
+      "collection": "mercile",
+      "status": "Truque conhecido",
+      "image": "mercile-prestidigitacao.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Transmutação",
+        "Conjuração": "Ação",
+        "Alcance": "3 m",
+        "Componentes": "V · S",
+        "Duração": "Até 1 hora",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Produz um pequeno efeito mágico cotidiano.",
+      "mechanics": "Escolha um efeito sensorial, fogo menor, limpeza ou sujeira, temperatura ou sabor, marca ou pequena criação temporária. Até três efeitos não instantâneos podem coexistir.",
+      "source": "Linhagem Alta Elfa ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "laios-bencao",
+      "title": "Bênção",
+      "collection": "laios",
+      "status": "Preparada · Paladino",
+      "image": "laios-bencao.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação",
+        "Alcance": "9 m",
+        "Componentes": "V · S · M — símbolo sagrado de pelo menos 5 PO",
+        "Duração": "Até 1 minuto",
+        "Concentração": "Sim",
+        "Ritual": "Não"
+      },
+      "description": "Abençoa até três criaturas ao alcance.",
+      "mechanics": "Cada alvo soma 1d4 às jogadas de ataque e salvaguardas enquanto durar a concentração. Acrescenta um alvo por círculo acima do primeiro.",
+      "source": "Paladino ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "laios-curar-ferimentos",
+      "title": "Curar Ferimentos",
+      "collection": "laios",
+      "status": "Preparada · Paladino",
+      "image": "laios-curar-ferimentos.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Abjuração",
+        "Conjuração": "Ação",
+        "Alcance": "Toque",
+        "Componentes": "V · S",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Restaura pontos de vida pelo toque.",
+      "mechanics": "Restaura 2d8 + modificador de Carisma em PV. Soma 2d8 por círculo acima do primeiro.",
+      "source": "Paladino ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "laios-maldicao",
+      "title": "Maldição",
+      "collection": "laios",
+      "status": "Preparada · Bruxo",
+      "image": "laios-maldicao.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Encantamento",
+        "Conjuração": "Ação bônus",
+        "Alcance": "27 m",
+        "Componentes": "V · S · M — olho petrificado de tritão",
+        "Duração": "Até 1 hora",
+        "Concentração": "Sim",
+        "Ritual": "Não"
+      },
+      "description": "Marca uma criatura com uma maldição.",
+      "mechanics": "Enquanto durar a concentração, seus ataques que acertarem o alvo infligem 1d6 necrótico extra. Ele tem desvantagem em testes de atributo com o atributo escolhido. Se chegar a 0 PV, uma ação bônus em turno posterior permite mudar o alvo.",
+      "source": "Bruxo ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "laios-armadura-de-agathys",
+      "title": "Armadura de Agathys",
+      "collection": "laios",
+      "status": "Preparada · Bruxo",
+      "image": "laios-armadura-de-agathys.webp",
+      "facts": {
+        "Círculo": "1º círculo",
+        "Escola": "Abjuração",
+        "Conjuração": "Ação bônus",
+        "Alcance": "Pessoal",
+        "Componentes": "V · S · M — fragmento de vidro azul",
+        "Duração": "1 hora",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Geada mágica protetora envolve o conjurador.",
+      "mechanics": "Concede 5 PV temporários e causa 5 de frio a quem acertar você em um ataque corpo a corpo. Termina se ficar sem PV temporários. Ambos os valores aumentam em 5 por círculo acima do primeiro.",
+      "source": "Bruxo ·  Player’s Handbook · 2024"
+    },
+    {
+      "id": "laios-rajada-mistica",
+      "title": "Rajada Mística",
+      "collection": "laios",
+      "status": "Truque conhecido",
+      "image": "laios-rajada-mistica.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Evocação",
+        "Conjuração": "Ação",
+        "Alcance": "36 m",
+        "Componentes": "V · S",
+        "Duração": "Instantânea",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "Dispara um feixe crepitante de força.",
+      "mechanics": "Ataque mágico à distância contra uma criatura ou objeto. Acerto causa 1d10 de força. São 2/3/4 feixes nos níveis 5/11/17, com ataques separados.",
+      "source": "Bruxo ·  Regras de D&D de 2024"
+    },
+    {
+      "id": "laios-lamina-trovejante",
+      "title": "Lâmina Trovejante",
+      "collection": "laios",
+      "status": "Truque conhecido",
+      "image": "laios-lamina-trovejante.webp",
+      "facts": {
+        "Círculo": "Truque",
+        "Escola": "Evocação",
+        "Conjuração": "Ação",
+        "Alcance": "Pessoal (raio de 1,5 m)",
+        "Componentes": "S · M — arma corpo a corpo de pelo menos 1 PP",
+        "Duração": "1 rodada",
+        "Concentração": "Não",
+        "Ritual": "Não"
+      },
+      "description": "O golpe deixa energia trovejante ao redor do alvo.",
+      "mechanics": "Faça um ataque corpo a corpo com a arma usada como componente contra uma criatura a até 1,5 m. Em acerto, aplique o efeito normal da arma. Se o alvo se mover voluntariamente pelo menos 1,5 m antes do início do seu próximo turno, sofre 1d8 trovejante. No nível 5, o acerto passa a causar também dano trovejante e o dano pelo movimento aumenta. Ambos escalam nos níveis 11 e 17.",
+      "source": "Bruxo ·  Tasha · 2020 e errata oficial"
+    }
+  ],
+  "note_sync": false,
+  "inventory_authority": false
+}
