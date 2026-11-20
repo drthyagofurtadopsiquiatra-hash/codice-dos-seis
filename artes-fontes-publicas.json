@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "images": [
+    {
+      "file": "thyago-nevoa.webp",
+      "spell": "Fog Cloud",
+      "source": "Player’s Handbook2024",
+      "pdf_page": 275,
+      "visual_review": true,
+      "art_direction": "Névoa cinza-prateada, sombras ameixa e reflexos dourados; estas cores são direção de arte, não cores fixadas pelo livro.",
+      "sha256": "afb9d891399b4ef450bb4fcafcea457fda8f27196d36b4cd32b6ff7b0d081152"
+    },
+    {
+      "file": "thalyta-fogo-das-fadas.webp",
+      "spell": "Faerie Fire",
+      "source": "Player’s Handbook2024",
+      "pdf_page": 270,
+      "visual_review": true,
+      "official_visual_choice": "Contornos de luz violeta, uma das três cores permitidas; sem combustão.",
+      "art_direction": "Objetos, cenário e iluminação ambiente são direção de arte, não um acontecimento da campanha.",
+      "sha256": "d3cdc20b3e2c6273ba6b0237caa7d4f6139b574238fb2c4783468ca15eb00d72"
+    }
+  ]
+}

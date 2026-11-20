@@ -35,3 +35,8 @@
 .art-actions{display:flex;justify-content:center;padding:8px 0 12px}
 .art-actions a{padding:9px 13px;border:1px solid var(--edge);border-radius:8px;text-decoration:none;min-height:44px}
 @media(min-width:751px) and (max-width:1100px){#mercile .cards,#thalyta .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Formação de cinco: folhas de personagem e cartas legíveis em telas menores. */
+.sheet-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:16px}.character-sheet{padding:20px;border:1px solid var(--edge);border-radius:14px;background:var(--panel)}.character-sheet h3{font-size:1.7rem;color:var(--gold);margin:.4rem 0}.character-sheet p{overflow-wrap:anywhere}#senshi .art img{object-fit:contain}#thyago-nevoa .art img,#thalyta-fogo-das-fadas .art img{aspect-ratio:3/2;height:auto;object-fit:contain}#historico .art img{width:100%;height:auto;max-height:480px;object-fit:contain}#historico .art{height:auto}.nav{overflow-x:auto}@media(max-width:750px){.sheet-grid{grid-template-columns:1fr;padding:10px}.character-sheet{padding:16px}}
+
+#thyago-nevoa .art,#thalyta-fogo-das-fadas .art{height:auto;aspect-ratio:3/2;overflow:hidden}

@@ -1,18 +1,9 @@
-# Códice dos Seis
+# Códice de Phandelver
 
-Site estático para GitHub Pages. A publicação usa a raiz da branch `main`. Cada atualização nessa branch dispara um novo deploy pelo Pages.
+Fichas da formação de cinco e cartas ilustradas da campanha PI2602. Thyago, Thalyta, Senshi, Nyra e Marcelli estão no nível total2. Revisão pública32.
 
-## Atualizar cartas e imagens
+A aba Fichas apresenta a formação atual; as cartas indicam o repertório preparado, truques e invocação. Laios e as opções fora da preparação ficam no Histórico. As ilustrações históricas e as chaves de anotações foram preservadas. Artes antigas com Laios não são retratos de Senshi.
 
-1. Prepare o material em uma pasta local separada do projeto da campanha. Confira cada carta contra as descobertas confirmadas da campanha correspondente.
-2. Faça a revisão visual de cada imagem, incluindo fundo, detalhes e legendas. Exporte somente a versão adequada para publicação, sem metadados privados.
-3. Acrescente cada carta revisada à seção `cartas` em `index.html`. Use um elemento `article` com título, descrição e, quando liberada, uma imagem com texto alternativo e caminho relativo.
-4. Abra `index.html` no navegador. Confira a leitura e a navegação em tamanhos de celular e tablet. Revise o conjunto completo de arquivos do commit, pois os arquivos e o histórico do repositório são públicos.
-5. Integre o commit em `main` e confira a execução do Pages na aba Actions. Abra a página publicada para verificar a atualização.
+As coleções de campo preservam documentação pública anterior, sem conceder estoque, aprendizagem, receita executada ou descoberta nova. Notas do navegador não alteram a campanha; exporte seu backup. Equipamentos e saldos ainda têm pendências.
 
-O guia de campo foi adaptado de `COMO-OBSERVAR-ECOLOGIA.md`. O envio ao repositório inclui apenas arquivos destinados à publicação. Mantenha arquivos da campanha, fontes privadas e rascunhos fora deste repositório.
-
-## Atualizar a preparação da clériga
-
-Em `mercile.html`, mova a carta entre as seções `preparadas` e `disponiveis` após conferir a preparação registrada. Atualize a indicação da carta e os totais dos links no topo. Os truques conhecidos ficam na seção `truques`. Cada carta aponta para um WebP próprio, com o enquadramento completo.
-
+Névoa e Fogo das Fadas: fontes e direção de arte em artes-fontes-publicas.json. Testes em390×844,834×1112 e1440×1000; sem comprovação de aparelhos físicos.
