@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "phandelver-integrada-seven-20261123",
+  "campaignName": "Reinício · elenco rotativo",
+  "revision": 14,
+  "updated": "2026-11-23",
+  "status": "Sessão zero pausada",
+  "roster": [
+    {
+      "id": "feiticeiro",
+      "name": "Thyago",
+      "classLabel": "Arcanista das Sombras",
+      "level": 1,
+      "formation": "initial",
+      "cantrips": [
+        {
+          "id": "sorcerous-burst",
+          "name": "Explosão Feiticeira"
+        },
+        {
+          "id": "mind-sliver",
+          "name": "Estilhaço Mental"
+        },
+        {
+          "id": "mage-hand",
+          "name": "Mão Mágica"
+        },
+        {
+          "id": "minor-illusion",
+          "name": "Ilusão Menor"
+        },
+        {
+          "id": "guidance",
+          "name": "Orientação"
+        },
+        {
+          "id": "mending",
+          "name": "Consertar"
+        },
+        {
+          "id": "eldritch-blast",
+          "name": "Rajada Mística"
+        }
+      ],
+      "prepared": [
+        {
+          "id": "sleep",
+          "name": "Sono"
+        },
+        {
+          "id": "shield",
+          "name": "Escudo"
+        },
+        {
+          "id": "detect-magic",
+          "name": "Detectar Magia"
+        },
+        {
+          "id": "speak-with-animals",
+          "name": "Falar com Animais"
+        },
+        {
+          "id": "find-familiar",
+          "name": "Encontrar Familiar"
+        }
+      ],
+      "portrait": "./retrato-feiticeiro-20261123-v1.webp",
+      "portraitAlt": "Representação de Thyago",
+      "portraitCaption": "Representação visual · não confirma ação ou equipamento em uso."
+    },
+    {
+      "id": "thalya",
+      "name": "Thalyta",
+      "classLabel": "Barda",
+      "level": 1,
+      "formation": "initial",
+      "cantrips": [
+        {
+          "id": "vicious-mockery",
+          "name": "Zombaria Viciosa"
+        },
+        {
+          "id": "minor-illusion",
+          "name": "Ilusão Menor"
+        }
+      ],
+      "prepared": [
+        {
+          "id": "faerie-fire",
+          "name": "Fogo das Fadas"
+        },
+        {
+          "id": "dissonant-whispers",
+          "name": "Sussurros Dissonantes"
+        },
+        {
+          "id": "healing-word",
+          "name": "Palavra Curativa"
+        },
+        {
+          "id": "command",
+          "name": "Comando"
+        }
+      ],
+      "portrait": "./retrato-thalya-20261123-v1.webp",
+      "portraitAlt": "Representação de Thalyta",
+      "portraitCaption": "Representação visual · não confirma ação ou equipamento em uso."
+    },
+    {
+      "id": "senshi",
+      "name": "Senshi",
+      "classLabel": "Guerreiro",
+      "level": 1,
+      "formation": "initial",
+      "cantrips": [],
+      "prepared": [],
+      "portrait": "./retrato-senshi-20261123-v1.webp",
+      "portraitAlt": "Representação de Senshi",
+      "portraitCaption": "Representação visual · não confirma ação ou equipamento em uso."
+    },
+    {
+      "id": "laios",
+      "name": "Laios",
+      "classLabel": "Paladino",
+      "level": 1,
+      "formation": "reserve",
+      "cantrips": [],
+      "prepared": [
+        {
+          "id": "bless",
+          "name": "Bênção"
+        },
+        {
+          "id": "cure-wounds",
+          "name": "Curar Ferimentos"
+        }
+      ],
+      "portrait": "./retrato-laios-20261123-v1.webp",
+      "portraitAlt": "Representação de Laios",
+      "portraitCaption": "Representação visual · não confirma ação ou equipamento em uso."
+    },
+    {
+      "id": "nyra",
+      "name": "Nyra",
+      "classLabel": "Ladina",
+      "level": 1,
+      "formation": "initial",
+      "cantrips": [],
+      "prepared": [],
+      "portrait": "./retrato-nyra-20261123-v1.webp",
+      "portraitAlt": "Representação de Nyra",
+      "portraitCaption": "Representação visual · não confirma ação ou equipamento em uso."
+    },
+    {
+      "id": "marcelli",
+      "name": "Marcelli",
+      "classLabel": "Clériga",
+      "level": 1,
+      "formation": "initial",
+      "cantrips": [
+        {
+          "id": "guidance",
+          "name": "Orientação"
+        },
+        {
+          "id": "sacred-flame",
+          "name": "Chama Sagrada"
+        },
+        {
+          "id": "toll-the-dead",
+          "name": "Dobrar os Mortos"
+        },
+        {
+          "id": "thaumaturgy",
+          "name": "Taumaturgia"
+        }
+      ],
+      "prepared": [
+        {
+          "id": "bless",
+          "name": "Bênção"
+        },
+        {
+          "id": "healing-word",
+          "name": "Palavra Curativa"
+        },
+        {
+          "id": "cure-wounds",
+          "name": "Curar Ferimentos"
+        },
+        {
+          "id": "guiding-bolt",
+          "name": "Raio Guiador"
+        }
+      ],
+      "portrait": "./retrato-marcelli-20261123-v1.webp",
+      "portraitAlt": "Representação de Marcelli",
+      "portraitCaption": "Representação visual · não confirma ação ou equipamento em uso."
+    },
+    {
+      "id": "druida-harengon",
+      "name": "Timo Folhaverde",
+      "classLabel": "Druida",
+      "level": 1,
+      "formation": "reserve",
+      "cantrips": [
+        {
+          "id": "starry-wisp",
+          "name": "Centelha Estelar"
+        },
+        {
+          "id": "thorn-whip",
+          "name": "Chicote de Espinhos"
+        },
+        {
+          "id": "guidance",
+          "name": "Orientação"
+        },
+        {
+          "id": "druidcraft",
+          "name": "Arte Druídica"
+        },
+        {
+          "id": "mending",
+          "name": "Consertar"
+        }
+      ],
+      "prepared": [
+        {
+          "id": "entangle",
+          "name": "Enredar"
+        },
+        {
+          "id": "faerie-fire",
+          "name": "Fogo das Fadas"
+        },
+        {
+          "id": "goodberry",
+          "name": "Bom Fruto"
+        },
+        {
+          "id": "detect-magic",
+          "name": "Detectar Magia"
+        },
+        {
+          "id": "speak-with-animals",
+          "name": "Falar com Animais"
+        },
+        {
+          "id": "healing-word",
+          "name": "Palavra Curativa"
+        }
+      ],
+      "portrait": "./retrato-druida-harengon-20261123-v1.webp",
+      "portraitAlt": "Representação de Timo Folhaverde",
+      "portraitCaption": "Representação visual · não confirma ação ou equipamento em uso."
+    },
+    {
+      "id": "brixa-rebite",
+      "name": "Brixa Rebite",
+      "classLabel": "Artífice",
+      "level": 1,
+      "formation": "reserve",
+      "cantrips": [
+        {
+          "id": "ray-of-frost",
+          "name": "Raio de Gelo"
+        },
+        {
+          "id": "guidance",
+          "name": "Orientação"
+        },
+        {
+          "id": "mending",
+          "name": "Consertar"
+        },
+        {
+          "id": "prestidigitation",
+          "name": "Prestidigitação"
+        }
+      ],
+      "prepared": [
+        {
+          "id": "grease",
+          "name": "Graxa"
+        },
+        {
+          "id": "cure-wounds",
+          "name": "Curar Ferimentos"
+        }
+      ],
+      "portrait": "./retrato-brixa-rebite-20261123-v1.webp",
+      "portraitAlt": "Representação de Brixa Rebite",
+      "portraitCaption": "Representação visual · não confirma ação ou equipamento em uso."
+    }
+  ],
+  "discoveries": {
+    "bestiario": [],
+    "botanica": [],
+    "alquimia": [],
+    "culinaria": []
+  }
+}
